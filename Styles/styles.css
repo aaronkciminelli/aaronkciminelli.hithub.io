@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+
 
 /* Add a gray background color with some padding */
 body {
@@ -20,30 +18,52 @@ body {
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.leftcolumn {   
+.leftcolumn {
   float: left;
-  width: 75%;
+  width: 18%;
+  position: relative; 
+  padding-right: 0px;
+
+
 }
 
 /* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
+.rightcolumn {   
+  float: right;
+  width: 81%;
+  min-height: 100%;
+  position: relative;
 }
 
 /* Fake image */
-.fakeimg {
-  width: 100%;
-  padding: 20px;
-  object-fit: contain;
+.img {
+
+  padding-bottom: 20px;
+
+
 }
 
 /* Add a card effect for articles */
 .card {
    background-color: white;
-   padding: 20px;
+   padding: 15px;
    margin-top: 20px;
+}
+
+.bcard {
+  background-color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
+.acard {
+  background-color: rgb(3, 3, 3);
+  padding: 20px;
+  height: 2000px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: white;
+  text-align: center;
+
 }
 
 /* Clear floats after the columns */
@@ -53,13 +73,24 @@ body {
   clear: both;
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 /* Footer */
 .footer {
-  padding: 20px;
+  position: relative; 
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  top: 90px;
+background-color: #0a0101;
+  color: white;
   text-align: center;
-  background: #ddd;
-  margin-top: 20px;
+padding: 10px;
 }
+
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
