@@ -7,7 +7,7 @@ for (var i = 0; i < radioButtons.length; i++) {
 }
 
 function loadResumeContent(sectionName) {
-  var xhr = new XMLHttpRequest();
+  var xhr = new HTMLHttpRequest();
   xhr.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById("resume-content").innerHTML = this.responseText;
