@@ -13,6 +13,6 @@ function loadResumeContent(sectionName) {
       document.getElementById("resume-content").innerHTML = this.responseText;
     }
   };
-  xhr.open("GET", "resume/" + sectionName + ".html", true);
+  xhr.open("GET", sectionName + ".html", true);
   xhr.send();
 }
