@@ -1,55 +1,77 @@
+/* Global Styles */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* set minimum height to full viewport height */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 0 1rem;
+  flex: 1; /* allow main content to grow to fill remaining space */
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  position: fixed; /* position at bottom of viewport */
+  bottom: 0; /* stick to the bottom of viewport */
+  width: 100%; /* set width to full viewport width */
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
   }
-  
-  h1 {
-    font-size: 2em;
+
+  nav li {
+    margin: 0.5rem 0;
   }
-  
-  #about-me,
-  #resume {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    margin-top: 20px;
-  }
-  
-  #radio-buttons {
-    margin-bottom: 10px;
-  }
-  
-  #resume-content {
-    margin-top: 20px;
-  }
-  
-  #about-me {
-    background-color: #f9f9f9;
-    box-shadow: 0px 2px 5px #ccc;
-  }
-  
-  #about-me p {
-    font-size: 1.2em;
-    line-height: 1.5;
-  }
-  
-  #resume {
-    background-color: #f9f9f9;
-    box-shadow: 0px 2px 5px #ccc;
-  }
-  
-  #radio-buttons input[type="radio"] {
-    margin-right: 10px;
-  }
-  
-  #resume-content h2 {
-    font-size: 1.5em;
-    margin-top: 10px;
-  }
-  
-  #resume-content p {
-    line-height: 1.5;
-  }
-  
+}
