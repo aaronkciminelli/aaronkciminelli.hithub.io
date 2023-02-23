@@ -78,7 +78,6 @@ main {
   padding: 0 1rem;
   flex: 1;
   display: flex;
-  min-height: 100%; 
 }
 
 
@@ -102,10 +101,10 @@ footer {
   color: #fff;
   padding: 1rem;
   text-align: center;
-  height: 4rem; /* set the height of the footer */
+  height: 4rem;
   width: 100%;
   position: fixed;
-  bottom: calc(4rem + 12rem); /* add the height of the nav.left-nav section (12rem) to the height of the footer (4rem) */
+  bottom: 0;
   margin: 0;
   padding-top: 0;
 }
