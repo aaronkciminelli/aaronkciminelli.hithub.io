@@ -101,7 +101,7 @@ img {
   color: #007bff;
 }
 
-.button {
+button {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 25px;
@@ -118,7 +118,7 @@ img {
   transition: background-color 0.3s ease-in-out;
 }
 
-.button:hover {
+button:hover {
   background-color: #0056b3;
 }
 
