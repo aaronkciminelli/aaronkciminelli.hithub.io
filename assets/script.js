@@ -1,21 +1,18 @@
-function loadResume(url) {
-    document.getElementById('myFrame').src = url;
+function loadResume() {
+    const frame = document.getElementById('myFrame');
+    frame.src = 'assets/Resume.html';
   }
   
-  function loadPortfolio(url) {
-    document.getElementById('myFrame').src = url;
+  function loadPortfolio() {
+    const frame = document.getElementById('myFrame');
+    frame.src = 'assets/Portfolio.html';
   }
   
   document.addEventListener('DOMContentLoaded', function() {
     const resumeButton = document.getElementById('button1');
     const portfolioButton = document.getElementById('button2');
-    
-    resumeButton.addEventListener('click', function() {
-      loadResume('assets/Resume.html');
-    });
-    
-    portfolioButton.addEventListener('click', function() {
-      loadPortfolio('assets/Resume.html');
-    });
+  
+    resumeButton.addEventListener('click', loadResume);
+    portfolioButton.addEventListener('click', loadPortfolio);
   });
   

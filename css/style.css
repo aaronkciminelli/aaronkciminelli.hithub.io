@@ -6,8 +6,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
+
 
 header {
   background-image: url("../images/banner.jpeg");
@@ -121,20 +122,22 @@ button {
 button:hover {
   background-color: #0056b3;
 }
-#button-container,
-#button-container-2 {
-  position: relative;
-  z-index: 2; /* Add a higher z-index than the <iframe> element */
+#button-container {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 1rem;
 }
 
 
+
 #myFrame {
-  height: calc(100vh - 250px); /* Adjust the height based on the button and footer heights */
   position: absolute;
-  top: 80px; /* Adjust the top position */
-  left: 220px;
+  top: 325px; /* adjust the top position to account for the height of the header */
+  left: 290px;
   right: 0;
-  bottom: 0;
+  bottom: 4rem; /* adjust the bottom position to account for the height of the footer */
+  width: 700px;
+  height: 380px;
 }
 
 
@@ -168,7 +171,11 @@ footer {
 
 
   main {
-    margin-left: 0;
+    margin: 0 auto 2rem auto;
+    max-width: 800px;
+    padding: 0 1rem;
+    display: flex;
+    flex-grow: 1;
   }
 
   body.menu-open nav.left-nav {
