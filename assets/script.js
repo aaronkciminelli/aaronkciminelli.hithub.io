@@ -15,7 +15,7 @@ function loadResume(url) {
     });
     
     portfolioButton.addEventListener('click', function() {
-      loadPortfolio('assets/Portfolio.html');
+      loadPortfolio('assets/Resume.html');
     });
   });
   
