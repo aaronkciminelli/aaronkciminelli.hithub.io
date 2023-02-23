@@ -1,5 +1,4 @@
 /* Global Styles */
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -9,8 +8,42 @@ body {
   min-height: 100vh; /* set minimum height to full viewport height */
 }
 
+.left-container {
+  flex: 1;
+  background-image: url("../images/vbanner.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url("../images/picture.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
 header {
-  background-color: #333;
+  background-image: url("../images/banner.jpeg");
+  background-size: cover;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -55,13 +88,14 @@ p {
 }
 
 footer {
-  background-color: #333;
+  background-image: url("../images/banner.jpeg");
+  background-size: cover;
   color: #fff;
   padding: 1rem;
   text-align: center;
-  position: fixed; /* position at bottom of viewport */
-  bottom: 0; /* stick to the bottom of viewport */
-  width: 100%; /* set width to full viewport width */
+  position: static;
+  bottom: 0;
+  width: 100%;
 }
 
 /* Media Queries */
