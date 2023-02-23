@@ -49,6 +49,7 @@ main {
 
 section {
   margin-bottom: 2rem;
+  left: 300px;
 }
 
 h1 {
@@ -139,11 +140,6 @@ button:hover {
   width: 700px;
   height: 380px;
 }
-
-
-
-
-
 
 footer {
   background-image: url("../images/banner.jpeg");
