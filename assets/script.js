@@ -12,7 +12,7 @@ function loadDoc2() {
 
     function resizeIframe() {
         var iframe = document.getElementById("myFrame");
-        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
       }
       
       window.addEventListener("message", function(event) {
