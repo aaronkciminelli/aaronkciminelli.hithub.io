@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,9 +8,6 @@ body {
   min-height: 100vh;
 }
 
-
-
-
 header {
   background-image: url("../images/banner.jpeg");
   background-size: cover;
@@ -18,6 +16,8 @@ header {
   justify-content: space-between;
   padding: 0rem;
   height: 4rem; /* set the height of the header */
+  position: relative;
+  z-index: 1; /* add this property to ensure the header appears above the left nav */
 }
 
 nav ul {
@@ -36,50 +36,14 @@ nav a {
   text-decoration: none;
 }
 
-nav.left-nav {
-  background-image: url("../images/vbanner.jpeg");
-  background-clip: padding-box;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  color: #fff;
-  height: calc(100vh - 8rem);
-  width: 12rem;
-  position: fixed;
-  bottom: 4rem;
-  margin: 0;
-  padding-bottom: 0;
-  padding-top: 0;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
-
-
-
-
-nav.left-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav.left-nav li {
-  margin: 1rem 0;
-}
-
-nav.left-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
 main {
-  margin: 2rem auto 2rem 12rem;
+  margin: 4rem auto 2rem auto;
   max-width: 800px;
   padding: 0 1rem;
   flex: 1;
   display: flex;
+  min-height: 100%; 
 }
-
 
 section {
   margin-bottom: 2rem;
@@ -118,12 +82,7 @@ footer {
     margin: 0.5rem 0;
   }
 
-  nav.left-nav {
-    position: fixed;
-    top: 0;
-    left: -10rem;
-    transition: left 0.3s ease;
-  }
+
 
   main {
     margin-left: 0;
