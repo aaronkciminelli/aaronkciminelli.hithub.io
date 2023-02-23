@@ -136,6 +136,7 @@ button:hover {
   top: calc(100% + 10px); /* add 10px to create a gap between the button container and the iframe */
   left: 220px;
   width: 100%;
+  height:100%;
 }
 
 
