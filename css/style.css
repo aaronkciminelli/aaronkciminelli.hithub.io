@@ -123,16 +123,18 @@ button:hover {
 }
 #button-container {
   position: relative;
+  z-index: 1; /* add this property to give the button container a higher stacking order */
 }
 
 #button-container-2 {
   position: relative;
+  z-index: 1; /* add this property to give the button container a higher stacking order */
 }
 
 #myFrame {
   position: absolute;
-  top: 100%;
-  left: 100px;
+  top: calc(100% + 10px); /* add 10px to create a gap between the button container and the iframe */
+  left: 220px;
   width: 100%;
 }
 
