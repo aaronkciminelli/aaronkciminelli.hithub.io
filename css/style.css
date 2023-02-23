@@ -6,7 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 header {
@@ -122,23 +122,20 @@ button {
 button:hover {
   background-color: #0056b3;
 }
-#button-container {
-  position: relative;
-  z-index: 1; /* add this property to give the button container a higher stacking order */
-}
-
+#button-container,
 #button-container-2 {
   position: relative;
-  z-index: 1; /* add this property to give the button container a higher stacking order */
+  z-index: 2; /* Add a higher z-index than the <iframe> element */
 }
 
+
 #myFrame {
-  height: 0; /* set the initial height to 0 */
-  position: absolute; /* set the position to absolute */
-  top: 200px; /* adjust the top property to move the iframe up */
-  left: 220px; /* adjust the left property to move the iframe left */
-  right: 0; /* set the right property to 0 to ensure the iframe fills the container */
-  bottom: 0; /* set the bottom property to 0 to ensure the iframe fills the container */
+  height: calc(100vh - 250px); /* Adjust the height based on the button and footer heights */
+  position: absolute;
+  top: 80px; /* Adjust the top position */
+  left: 220px;
+  right: 0;
+  bottom: 0;
 }
 
 
