@@ -118,7 +118,6 @@ button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease-in-out;
 }
-
 button:hover {
   background-color: #0056b3;
 }
@@ -130,10 +129,10 @@ button:hover {
 
 
 #myFrame {
-  height: 0;
+  height: calc(100vh - 250px); /* Adjust the height based on the button and footer heights */
   position: absolute;
-  top: 100px; /* set top value to be greater than the button's height */
-  left: 0; /* align with the left edge of the container */
+  top: 80px; /* Adjust the top position */
+  left: 220px;
   right: 0;
   bottom: 0;
 }
