@@ -10,7 +10,14 @@ function loadDoc2() {
     iframe.style.display = "block";
     }
 
-function resizeIframe() {
-    var iframe = document.getElementById("myFrame");
-    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
-}
+    function resizeIframe() {
+        var iframe = document.getElementById("myFrame");
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
+      }
+      
+      window.addEventListener("message", function(event) {
+        if (event.data === "resize") {
+          resizeIframe();
+        }
+      });
+      
