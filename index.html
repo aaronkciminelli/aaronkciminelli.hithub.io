@@ -3,11 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>About Me - My Personal Website</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <iframe id="myFrame" title="Google Docs" style="display:none" frameborder="0" marginheight="0" marginwidth="0" onload="resizeIframe()"></iframe><script src="/assets/script.js"></script>
   </head>
   <body>
     <header>
@@ -33,8 +31,12 @@
         <h1>Welcome</h1>
         <p>Welcome to my personal website! This page is all about me and what I do.</p>
         <p>Coming SOON</p>
-        <button id="button1" onclick="loadResume('assets/Resume.html')">Resume</button>
-        <button id="button2" onclick="loadPortfolio('assets/Portfolio.html')">Portfolio</button>        
+        <div id="button-container">
+          <button id="button1">Resume</button>
+        </div>
+        <div id="button-container-2">
+          <button id="button2">Portfolio</button>
+        </div>
         <iframe id="myFrame" src="assets/Resume.html" frameborder="0"></iframe>
       </section>
     </main>
