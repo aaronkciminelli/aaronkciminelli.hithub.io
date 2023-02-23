@@ -103,7 +103,7 @@ img {
 }
 
 button {
-  display: inline-block;
+  display: inline-block; /* display buttons side by side */
   padding: 10px 20px;
   border-radius: 25px;
   border: none;
@@ -114,7 +114,7 @@ button {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  margin: 10px;
+  margin: 10px 5px 10px 0; /* add right margin to separate the buttons */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease-in-out;
 }
@@ -130,10 +130,10 @@ button:hover {
 
 
 #myFrame {
-  height: calc(100vh - 250px); /* Adjust the height based on the button and footer heights */
+  height: 0;
   position: absolute;
-  top: 80px; /* Adjust the top position */
-  left: 220px;
+  top: 100px; /* set top value to be greater than the button's height */
+  left: 0; /* align with the left edge of the container */
   right: 0;
   bottom: 0;
 }
