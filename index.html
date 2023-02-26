@@ -1,46 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me - My Personal Website</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="under-construction.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <aside>
-        <img src="images/picture.jpg" alt="Profile Image" />
-        <ul class="social-media-icons">
-          <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="https://github.com/ACSNHUREPOS"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/aaron-ciminelli-92502a1b7/"><i class="fab fa-linkedin-in"></i></a></li>
-          <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-      </aside>
-      <section>
-        <h1>Welcome</h1>
-        <p>Welcome to my personal website! This page is all about me and what I do.</p>
-        <p>Coming SOON</p>
-        <div id="button-container">
-          <button id="button1">Resume</button>
-          <button id="button2">Portfolio</button>
-        </div>
-        <iframe id="myFrame" src="assets/Resume.html" frameborder="0"></iframe>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright &copy; 2023 Aaron Ciminelli. All Rights Reserved</p>
-    </footer>
-    <script src="assets/script.js"></script>
-  </body>
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<title>Aaron Ciminelli</title>
+	</head>
+	<body> 
+		<header>
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="under-construction.html">Projects</a>
+				<a href="under-construction.html">Contact Me</a>	
+			</nav>
+		</header>
+		<main>
+			<aside>
+				<img src="assets/picture.jpg" alt="Profile Image" />
+				<div id="profile-container">
+					<ul class="social-media-icons">
+						<li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="https://github.com/ACSNHUREPOS"><i class="fab fa-github"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/aaron-ciminelli-92502a1b7/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</aside>
+			<section>
+				<h1>Welcome</h1>
+				<p>Welcome to my personal website! This page is all about me and what I do.</p>
+				<p>Coming SOON</p>
+				<div id="button-container">
+					<button id="button1">Resume</button>
+					<button id="button2">Portfolio</button>
+				</div>
+				<div id="resume-content">
+					<h2>Resume</h2>
+					<p>Here is my resume:</p>
+					<ul>
+						<li>Education: XYZ University, Bachelor of Science in Computer Science</li>
+						<li>Experience: ABC Company, Software Engineer, 2018-present</li>
+					</ul>
+				</div>
+				<div id="portfolio-content">
+					<h2>Portfolio</h2>
+					<p>Here are some examples of my work:</p>
+					<ul>
+						<li>Project 1: Lorem ipsum dolor sit amet</li>
+						<li>Project 2: consectetur adipiscing elit</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p>Copyright &copy; 2023 Aaron Ciminelli. All Rights Reserved</p>
+		</footer>
+		<script>
+			// Get references to the buttons and content containers
+			const resumeButton = document.querySelector('#button1');
+			const portfolioButton = document.querySelector('#button2');
+			const resumeContent = document.querySelector('#resume-content');
+			const portfolioContent = document.querySelector('#portfolio-content');
+
+			// Add event listeners to the buttons
+			resumeButton.addEventListener('click', function() {
+				resumeContent.style.display = 'block';
+				portfolioContent.style.display = 'none';
+			});
+
+			portfolioButton.addEventListener('click', function() {
+				resumeContent.style.display = 'none';
+				portfolioContent.style.display = 'block';
+							});
+		</script>
+	</body>
 </html>
