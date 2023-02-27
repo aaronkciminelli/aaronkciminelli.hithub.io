@@ -1,3 +1,9 @@
+body {
+	background-color: antiquewhite; 
+	
+}
+
+
 /* Header Styling */
 header {
 	background-image: url("../assets/banner.jpeg");
