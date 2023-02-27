@@ -1,14 +1,15 @@
 body {
-	background-color: antiquewhite; 
+	background-image: url("../assets/bgr1.jpeg"); 
+	background-size: cover; 
 	
 }
 
 
 /* Header Styling */
 header {
-	background-image: url("../assets/banner.jpeg");
+	background-color: #F1F2F5;
 	background-size: cover;
-	color: mintcream;
+	color: black;
 	margin: auto;
 	text-align: left;
 	position: fixed; /* make the header fixed in position */
@@ -19,21 +20,22 @@ header {
 	padding: 10px 10px;
 }
 a {
-	color: aliceblue;
+	color: black;
 	font-size: 21px;
 }
+
 a:link {
 	text-decoration: none;
-	text-decoration-color: aliceblue;
+	text-decoration-color: black;
 }
 a:visited {
 	text-decoration: none;
-	text-decoration-color: rgb(230, 230, 245);
-	color: rgb(224, 224, 238);
+	text-decoration-color: black;
+	color: black; 
 }
 a:hover {
 	text-decoration: underline solid;
-	text-decoration-color: aliceblue;
+	text-decoration-color: black;
 }
 /* Profile Imgage */
 aside {
@@ -103,7 +105,7 @@ button {
 	transition: background-color 0.3s ease-in-out;
 }
 button:hover {
-	background-color: #0056b3;
+	background-color: black;
 }
 #button-container {
 	display: flex;
