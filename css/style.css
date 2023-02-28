@@ -116,7 +116,9 @@ button:hover {
 
 /* Tabbed content */
 #resume-content,
-#portfolio-content {
+#portfolio-content,
+#skills-content, 
+#act-content {
 	display: none;
 	padding: 1rem;
 	margin-top: 1rem;

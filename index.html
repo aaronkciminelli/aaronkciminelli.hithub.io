@@ -32,25 +32,44 @@
 				<p>Welcome to my personal website! This page is all about me and what I do.</p>
 				<p>Coming SOON</p>
 				<div id="button-container">
-					<button id="button1">Resume</button>
-					<button id="button2">Portfolio</button>
+					<button id="button1">Experience</button>
+					<button id="button2">Education</button>
+					<button id= "button3">Skills</button>
+					<button id= "button4">Activities</button>
 				</div>
 				<div id="resume-content">
-					<h2>Resume</h2>
-					<p>Here is my resume:</p>
-					<ul>
-						<li>Education: XYZ University, Bachelor of Science in Computer Science</li>
-						<li>Experience: ABC Company, Software Engineer, 2018-present</li>
-					</ul>
+					<h1>Experience</h1>
+					<h3 style="color:#3DD872"> US Army, Staff Sergeant /Squad Leader, <em style="font-size: 15px">2010-2018</em></h3>
+					<p>During my military service, I was an active member of combat operations and provided support in various capacities. I assisted in the mobilization of vehicles, troops, and equipment and mentored junior team members on tactics and procedures, contributing to the team's overall success. I was responsible for maintaining and operating communications equipment, as well as recording operational information on maps. My experience in navigation and troop training also enabled me to aid in the planning and implementation of combat operations. I continuously developed my skills and knowledge through ongoing training, ensuring the team was well-equipped to carry out their missions. These experiences have equipped me with strong leadership, teamwork, and problem-solving abilities that are transferable to a variety of civilian settings.
+					</p>
+					<h3 style="color:#3DD872"> Metro One/Allied Universal, Security Officer <em style="font-size: 15px">2019-2021</em></h3>
+					<p>As a Security Officer at Lowe's Direct Fulfillment Center, I ensured the safety and security of the facility and its employees by monitoring the premises, conducting searches, screening employees and trailers, responding to reports of suspicious activity, enforcing site rules, patrolling public areas, preparing incident reports, conducting site searches, and verifying identities of authorized persons. I used de-escalation and crisis management techniques as needed. These experiences have developed my attention to detail, problem-solving, and interpersonal skills.
+					</p>
+					<h3 style="color:#3DD872"> SimplerFlex, Customer Service Resoulustions Expert <em style="font-size: 15px">2010-2018</em></h3>
+					<p>As a Customer Service Representative, I was responsible for verifying and obtaining required referrals and authorizations prior to services being provided. I obtained patient data to facilitate verification, handled high call volume, and instilled calm in customers while managing escalations and transfers. I offered customers current product and service information, continuously improved job knowledge through training and expert use of available knowledge bases, and built rapport with customers through active listening. I documented information from customers to determine product or service problems, processed customer exchanges and refunds, referred unresolved customer grievances to designated departments, identified causes of product malfunctions, and followed up with customers to share findings and offer solutions.
+					</p>
+					
 				</div>
 				<div id="portfolio-content">
-					<h2>Portfolio</h2>
-					<p>Here are some examples of my work:</p>
-					<ul>
-						<li>Project 1: Lorem ipsum dolor sit amet</li>
-						<li>Project 2: consectetur adipiscing elit</li>
-					</ul>
+					<h1>Education</h1>
+					<h3 style="color:#3DD872">B.S. Comp. Sci., Southern New Hampshire University&nbsp;<em style="font-size: 15px">2023,</em>&nbsp;<em style="font-size: 13px; color:black;">3.95 GPA</em></h3>
+
+
+					<p>Bachelor of Computer Science with a strong foundation in application development, operating platforms, data structures, algorithms, software testing and automation, programming languages, software development, UI/UX design, computational graphics, mathematics, statistics, and client-server applications. Demonstrated academic excellence with a 3.95 GPA in related coursework.
+					</p>
 				</div>
+				<div id="skills-content"> 
+					<h1> Skills</h1>
+					<p>I am experienced in problem documentation, problem solving, decision making, and analytical thinking. I have a strong attention to detail and am proficient in technology. My background in staff management and team development has honed my abilities in delegation and conflict resolution. I am proficient in Microsoft Office and programming languages including C++, Python, and Java. I have a strong background in internet research and am skilled in code writing and technical support. I am culturally aware and have strong customer relation skills.
+					</p>
+					
+				</div>
+				
+				<div id="act-content">
+					<h1>Activites</h1>
+					<p>As a veteran, I am dedicated to contributing to the community and am actively working on a personal project to develop an app for veterans to connect and access resources. I am also engaged in the Deaf community and actively exploring the use of AI and hearing aid technology to provide accessible communication in live settings. In my free time, I enjoy hiking and spending quality time with my family, especially at the beach.
+					</p>
+				</div> 
 			</section>
 		</main>
 		<footer>
@@ -60,18 +79,40 @@
 			// Get references to the buttons and content containers
 			const resumeButton = document.querySelector('#button1');
 			const portfolioButton = document.querySelector('#button2');
+			const skillsButton = document.querySelector('#button3');
+			const actButton = document.querySelector('#button4');
 			const resumeContent = document.querySelector('#resume-content');
 			const portfolioContent = document.querySelector('#portfolio-content');
+			const skillsContent = document.querySelector('#skills-content');
+			const actContent = document.querySelector('#act-content');
+			
+
 
 			// Add event listeners to the buttons
 			resumeButton.addEventListener('click', function() {
 				resumeContent.style.display = 'block';
 				portfolioContent.style.display = 'none';
+				skillsContent.style.display ='none';
+				actContent.style.display ='none';
 			});
 
 			portfolioButton.addEventListener('click', function() {
 				resumeContent.style.display = 'none';
 				portfolioContent.style.display = 'block';
+				skillsContent.style.display = 'none';
+				actContent.style.display ='none';
+							});
+			skillsButton.addEventListener('click', function() {
+				resumeContent.style.display = 'none';
+				portfolioContent.style.display = 'none';
+				skillsContent.style.display = 'block';
+				actContent.style.display ='none';
+							});
+			actButton.addEventListener('click', function() {
+				resumeContent.style.display = 'none';
+				portfolioContent.style.display = 'none';
+				skillsContent.style.display = 'none';
+				actContent.style.display ='block';
 							});
 		</script>
 	</body>
