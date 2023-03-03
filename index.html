@@ -98,31 +98,50 @@
 
 
 			// Add event listeners to the buttons
-			resumeButton.addEventListener('click', function() {
-				resumeContent.style.display = 'block';
-				portfolioContent.style.display = 'none';
-				skillsContent.style.display ='none';
-				actContent.style.display ='none';
-			});
+resumeButton.addEventListener('click', function() {
+	if (resumeContent.style.display !== 'block') {
+		resumeContent.style.display = 'block';
+		portfolioContent.style.display = 'none';
+		skillsContent.style.display ='none';
+		actContent.style.display ='none';
+	} else {
+		resumeContent.style.display = 'none';
+	}
+});
 
-			portfolioButton.addEventListener('click', function() {
-				resumeContent.style.display = 'none';
-				portfolioContent.style.display = 'block';
-				skillsContent.style.display = 'none';
-				actContent.style.display ='none';
-							});
-			skillsButton.addEventListener('click', function() {
-				resumeContent.style.display = 'none';
-				portfolioContent.style.display = 'none';
-				skillsContent.style.display = 'block';
-				actContent.style.display ='none';
-							});
-			actButton.addEventListener('click', function() {
-				resumeContent.style.display = 'none';
-				portfolioContent.style.display = 'none';
-				skillsContent.style.display = 'none';
-				actContent.style.display ='block';
-							});
+portfolioButton.addEventListener('click', function() {
+	if (portfolioContent.style.display !== 'block') {
+		resumeContent.style.display = 'none';
+		portfolioContent.style.display = 'block';
+		skillsContent.style.display = 'none';
+		actContent.style.display ='none';
+	} else {
+		portfolioContent.style.display = 'none';
+	}
+});
+
+skillsButton.addEventListener('click', function() {
+	if (skillsContent.style.display !== 'block') {
+		resumeContent.style.display = 'none';
+		portfolioContent.style.display = 'none';
+		skillsContent.style.display = 'block';
+		actContent.style.display ='none';
+	} else {
+		skillsContent.style.display = 'none';
+	}
+});
+
+actButton.addEventListener('click', function() {
+	if (actContent.style.display !== 'block') {
+		resumeContent.style.display = 'none';
+		portfolioContent.style.display = 'none';
+		skillsContent.style.display = 'none';
+		actContent.style.display ='block';
+	} else {
+		actContent.style.display = 'none';
+	}
+});
+
 		</script>
 	</body>
 </html>

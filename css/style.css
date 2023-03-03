@@ -1,5 +1,5 @@
 body {
-	background-image: url("../assets/bgr1.jpeg"); 
+	background-image: url("../assets/bg.jpeg"); 
 	background-size: cover;
 	margin: 0;
 	margin-top: 2rem; 
@@ -10,7 +10,7 @@ body {
 
 /* Header Styling */
 header {
-	background-color: #F1F2F5;
+	background-image: url("../assets/bg.jpeg"); 
 	background-size: cover;
 	color: black;
 	margin: auto;
@@ -21,6 +21,7 @@ header {
 	right: 0;
 	z-index: 1; /* ensure the header is displayed on top of other elements */
 	padding: 10px 10px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* add a shadow to the background */
 }
 a {
 	color: black;
@@ -148,9 +149,9 @@ button:hover {
 	padding: 1rem;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-	background-color: #f7f7f7;
+	rgba(247, 247, 247, 0.8);
 	border-radius: 5px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	box-shadow: rgba(247, 247, 247, 0.95);
 }
 #resume-content h2,
 #portfolio-content h2 {
@@ -158,9 +159,9 @@ button:hover {
 }
 /*Footer */
 footer {
-	background-image: url("../assets/ftr1.jpeg");
+	background-image: url("../assets/bgu.jpeg");
 	background-size: cover;
-	color: #fff;
+	color: black;
 	padding: 1rem;
 	text-align: center;
 	height: 2rem;
@@ -170,6 +171,7 @@ footer {
 	margin: 0;
 	padding-top: 0;
 	border: 0px;
-	justify-content: center;	
+	justify-content: center;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* add a shadow to the background */
 }
 
