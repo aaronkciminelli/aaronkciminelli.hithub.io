@@ -4,6 +4,7 @@ body {
 	margin: 0;
 	margin-top: 2rem; 
 	margin-bottom: 5rem; 
+	overflow-y: scroll;
 	
 }
 
@@ -46,12 +47,12 @@ aside {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	position: fixed; /* make the profile image/icons fixed in position */
-	top: 70px; /* adjust this value to position the profile image/icons as desired */
+	position: absolute;/* make the aside content sticky */
+	top: 70px; /* adjust this value to position the aside content as desired */
 	left: 0;
 	width: 200px;
 	margin-right: 2rem;
-	z-index: 1; /* ensure the profile image/icons are displayed on top of other elements */
+	z-index: -1; /* ensure the aside content is displayed on top of other elements */
 }
 .social-media-icons {
 	display: flex;
@@ -71,7 +72,7 @@ img {
 	margin-top: 5px;
 	border: 0px;
 	border-radius: 90%;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 /*main content*/
 main {
@@ -86,31 +87,42 @@ section {
 	padding: 10px; 
 	max-width: 100%;
 	text-align: center;
+	background-color: rgb(219,236,239, .01);
 }
 section h1 {
 	text-align: center;
 }
 
-section2 { 
+.section2-container {
+	border: 0px solid black; /* add a 2px solid black border around the container */
+	padding: 10px;
+	box-sizing: border-box;
+	max-width: 15%;
+	max-height: 100%;
+	text-align: center;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+	background-color: rgb(219,236,239, .01);
+	
+}
+
+section2 {
 	margin: auto;
-	padding: 10px; 
 	max-width: 100%;
 	text-align: center;
-
-}
-
-section2 h1{
-	text-align: center;
-	margin-left: 12%;
-
-	
+	overflow: auto; 
 	
 }
-section2 p{
-	text-align: center;
-	margin-left: 4%;
-	
+
+section2 h1 {
+  text-align: center;
+  margin-left: 12%;
 }
+
+section2 p {
+  text-align: center;
+  margin-left: 4%;
+}
+
 
 
 
@@ -120,20 +132,21 @@ button {
 	padding: 10px 20px;
 	border-radius: 25px;
 	border: none;
-	background-color: #007bff;
-	color: #fff;
+	background: linear-gradient(to right, #66c3ee, #3ce1d3); /* set gradient blue and white background */
+	color: black;
 	font-size: 10px;
 	font-weight: bold;
 	text-align: none;
 	text-decoration: none;
 	cursor: pointer;
 	margin: 10px 5px 10px 0; /* add right margin to separate the buttons */
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), inset 0 -2px 0 #07577c; /* add box-shadow with inset value for 3D effect */
 	transition: background-color 0.3s ease-in-out;
 }
 button:hover {
-	background-color: black;
+	background: linear-gradient(to bottom, #0c445d, #0383bc); /* set gradient black and white background on hover */
 }
+
 #button-container {
 	display: flex;
 	justify-content: center;
@@ -149,7 +162,7 @@ button:hover {
 	padding: 1rem;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-	rgba(247, 247, 247, 0.8);
+	background-color: rgba(247, 247, 247, 0.1);
 	border-radius: 5px;
 	box-shadow: rgba(247, 247, 247, 0.95);
 }
