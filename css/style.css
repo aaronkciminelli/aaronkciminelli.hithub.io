@@ -156,3 +156,139 @@ footer {
     position: static; /* make the footer fixed in position */
     width: 100%; /* set the width to 100% */
 }
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 768px) {
+  body {
+    margin-bottom: 60px;
+  }
+  aside {
+    top: 60px;
+    right: 10px;
+    width: 100px;
+    margin-right: 1rem;
+  }
+  img {
+    width: 100px;
+    margin-right: 0;
+  }
+  .social-media-icons {
+    margin-right: 0;
+  }
+  .hiname {
+    padding-top: 80px;
+    margin-inline-start: 0;
+    padding-right: 0;
+  }
+  section {
+    margin-top: 100px;
+    border-radius: 0;
+  }
+  main {
+    margin-top: 3rem;
+    border-radius: 0;
+  }
+  main h1 {
+    font-size: 25pt;
+  }
+  section h1 {
+    font-size: 25pt;
+  }
+  section p {
+    font-size: 12pt;
+  }
+  main p {
+    font-size: 12pt;
+  }
+}
+
+/* Media queries for smaller tablets */
+@media only screen and (max-width: 992px) {
+  aside {
+    top: 60px;
+    right: 10px;
+    width: 100px;
+    margin-right: 1rem;
+  }
+  img {
+    width: 100px;
+    margin-right: 0;
+  }
+  .social-media-icons {
+    margin-right: 0;
+  }
+  .hiname {
+    padding-top: 80px;
+    margin-inline-start: 0;
+    padding-right: 0;
+  }
+  section {
+    margin-top: 100px;
+    border-radius: 0;
+  }
+  main {
+    margin-top: 3rem;
+    border-radius: 0;
+  }
+  main h1 {
+    font-size: 25pt;
+  }
+  section h1 {
+    font-size: 25pt;
+  }
+  section p {
+    font-size: 12pt;
+  }
+  main p {
+    font-size: 12pt;
+  }
+}
+
+/* Media queries for larger screens */
+@media only screen and (min-width: 1200px) {
+  aside {
+    top: 70px;
+    right: 0;
+    width: 200px;
+    margin-right: 2rem;
+  }
+  img {
+    width: 200px;
+    margin-right: 100px;
+  }
+  .social-media-icons {
+    margin-right: 100px;
+  }
+  .hiname {
+    padding-top: 100px;
+    margin-inline-start: 35px;
+    padding-right: 200px;
+  }
+  section {
+    margin-top: 200px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 95px;
+    border-top-right-radius: 95px;
+  }
+  main {
+    margin-top: 5rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 95px;
+    border-top-right-radius: 95px;
+  }
+  main h1 {
+    font-size: 30pt;
+  }
+  section h1 {
+    font-size: 30pt;
+  }
+  section p {
+    font-size: 14pt;
+  }
+  main p {
+    font-size: 14pt;
+  }
+}
+
