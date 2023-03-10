@@ -3,7 +3,8 @@ body {
     height: 100%;
     background-color: #FFFFFF;
     background-image: url("../assets/webbgd.png");
-    background-size: cover; 
+    background-size: 100%;
+	background-repeat: no-repeat; 
     margin: 0;
     margin-bottom: 10px; 
 }
@@ -13,31 +14,13 @@ nav {
     color: aliceblue; 
     margin: 0;
     text-align: left;
-    /* make the header fixed in position */
-    top: 0;
-    width: 17%; 
-    z-index: 1; /* ensure the header is displayed on top of other elements */
-    padding: 10px 10px;
-
 }
+
 a {
     color: black; 
     font-size: 21px;
 }
 
-a:link {
-    text-decoration: none;
-    text-decoration-color: black;
-}
-a:visited {
-    text-decoration: none;
-    text-decoration-color: black;
-}
-a:hover {
-    text-decoration: underline solid;
-    text-decoration-color: black;
-    color: #637680; 
-}
 
 aside {
     display: flex;
