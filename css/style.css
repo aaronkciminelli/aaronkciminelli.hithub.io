@@ -2,6 +2,8 @@ nav {
     color: aliceblue; 
     margin: 0;
     text-align: left;
+	height:31px;
+	padding: 10px; 
 }
 
 body {
@@ -59,52 +61,66 @@ img {
 
 .hiname { 
 	text-align: center;
-	padding-top: 100px; 
-	width: 50%;
-	margin-inline-start: 35px; 
-	
-} 
+	padding-top: 100px;
+	margin-inline-start: 35px;
+	margin-left: 0px;
+	padding-right: 200px; 
+	} 
+
+.hiname {
+	font-size: 23pt; 
+}
 
 .hiname p { 
 	font-size: 15pt;
-	font-family: cursive; 
+	font-family: cursive;
+
 }
 
-section{ 
+hr {
+    height: 2px;
+    background-color: #000000;
+    border: none;
+    margin: 20px 0;
+}
+
+
+
+section {
     margin-top: 200px;
-    margin-right: 50%;
     margin-left: 10px;
-    margin-bottom: 420px; 
     position: relative; 
 }
 
 section h1{ 
     text-align: center;
     font-size: 30pt;
-	margin-left: 20px; 
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; 
 }
 
 section p { 
-	margin-left: 20px; 
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 14pt; 
 }
 
 main{
 	margin-top: 5rem; 
-    margin-left: 20px;
-	padding-right: 45%; 
-    margin-bottom: 150px; 
-    position: relative; 
+    margin-left: 10px;
+	position: relative; 
 }
 
 main h1 {
-    text-align: left; 
+    text-align: center; 
     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; 
 }
 
 main p { 
-    text-align: justify; 
     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; 
-    font-size: 14pt; 
+    font-size: 14pt;
+	padding-left: 20px;
+	padding-right: 20px; 
 }
 
 footer {
