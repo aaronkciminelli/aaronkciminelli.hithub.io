@@ -76,7 +76,7 @@ img {
 }
 
 .hiname p { 
-	font-size: 15pt;
+	font-size: 17pt;
 	font-family: cursive;
 
 }
@@ -92,11 +92,17 @@ hr {
 /* welcome */ 
 section {
     margin-top: 200px;
-    margin-left: 10px;
+    margin-left: 20px;
+	margin-right: 20px;
     position: relative; 
+	border-bottom-left-radius: 30px; 
+	border-bottom-right-radius: 30px; 
+	border-top-left-radius: 95px; 
+	border-top-right-radius: 95px; 
 }
 
 section h1{ 
+	padding-top: 20px; 
     text-align: center;
     font-size: 30pt;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; 
@@ -114,12 +120,19 @@ section p {
 main{
 	margin-top: 5rem; 
     margin-left: 10px;
-	position: relative; 
+	position: relative;
+	border-bottom-left-radius: 30px; 
+	border-bottom-right-radius: 30px; 
+	border-top-left-radius: 95px; 
+	border-top-right-radius: 95px; 
 }
 
 main h1 {
+	padding-top: 20px;
     text-align: center; 
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; 
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 30pt;
+	
 }
 
 main p { 
@@ -133,15 +146,13 @@ main p {
 /* Footer */ 
 
 footer {
+	margin-top: 40px; 
 	margin-bottom: 0; 
-    background-color: #60727C;
     text-align: center; 
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* add a shadow to the background */
     height: 60px; /* decrease the height of the footer */
     display: flex; 
     align-items: center; 
     justify-content: center; 
     position: static; /* make the footer fixed in position */
-    bottom: 0; /* position the footer at the bottom of the page */
     width: 100%; /* set the width to 100% */
 }
