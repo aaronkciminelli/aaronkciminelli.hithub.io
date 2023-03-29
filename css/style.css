@@ -8,11 +8,7 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-.page-container {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-}
+
 
 .header {
 	background-color: black; 
@@ -90,5 +86,48 @@ footer {
 	width: 100%;
 
 }
+
+@media (max-width: 767px) {
+    .header {
+        font-size: 16pt;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .nav a {
+        float: none;
+        padding: 8px 16px;
+    }
+	
+	.page-container {
+    display: grid;
+    min-height: 100vh;
+}
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .sidesection {
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        margin-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .social-media-icons {
+        justify-content: center;
+        margin-right: 0;
+    }
+}
+
 
 
