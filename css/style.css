@@ -1,6 +1,10 @@
 /* CSS Document */
 
 body{ 
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 .content-wrapper {
     flex: 1;
