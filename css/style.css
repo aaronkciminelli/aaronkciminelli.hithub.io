@@ -1,13 +1,17 @@
 /* CSS Document */
 
 body{ 
-	display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     margin: 0;
 }
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+}
 .page-container {
-    flex: 1;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
 .header {
@@ -39,6 +43,10 @@ body{
 .nav a.active {
   background-color: black;
   color: white;
+}
+
+.sidesection {
+	float: none;
 }
 sidesection {
 	float: left; 
