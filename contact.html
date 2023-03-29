@@ -30,36 +30,7 @@
 		</ul>
 		</div>
 	</sidesection>
-	<form id="contact-form">
-		<label for="name">Name:</label>
-		<input type="text" id="name" name="name" required>
-		<label for="email">Email:</label>
-		<input type="email" id="email" name="email" required>
-		<label for="message">Message:</label>
-		<textarea id="message" name="message" required></textarea>
-		<button type="submit">Submit</button>
-	</form>
-	<script>
-      const form = document.querySelector('#contact-form');
-
-      form.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        const name = document.querySelector('#name').value;
-        const email = document.querySelector('#email').value;
-        const message = document.querySelector('#message').value;
-
-        // perform form validation here
-        // send form data to server using fetch() or XMLHttpRequest()
-		    // log form data to console for testing
-  console.log('Name:', name);
-  console.log('Email:', email);
-  console.log('Message:', message);
-});
-      });
-    </script>
-
-	
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScKY6CegGSERsfPkVHFp6VRI4lYMj8Z_P3ISoZLWgIyCbg6uA/viewform?embedded=true" width="640" height="1040" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>	
 	<footer> 
 	<p>Copyright &copy; 2023 Aaron Ciminelli. All Rights Reserved</p>
 	</footer>
