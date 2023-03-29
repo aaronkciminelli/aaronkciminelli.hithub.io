@@ -3,6 +3,10 @@
 body{ 
     margin: 0;
 }
+	.page-container {
+    display: grid;
+    min-height: 100vh;
+}
 
 .main-content {
     display: flex;
@@ -108,9 +112,11 @@ footer {
     min-height: 100vh;
 }
 
-    .main-content {
-        flex-direction: column;
-    }
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
     .sidesection {
         width: 100%;
