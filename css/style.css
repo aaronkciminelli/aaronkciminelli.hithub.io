@@ -3,15 +3,27 @@
 body{ 
     margin: 0;
 }
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.content-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
 
 .main-content {
-    display: flex;
-    flex-wrap: wrap;
+	position: relative; 
 }
 
 .iframe-container {
-	display: block; 
-	margin: auto; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 150px;
 }
 
 .header {
@@ -84,7 +96,7 @@ img {
 footer { 
 	display: block; 
 	text-align: center; 
-	padding: 3px; 
+	padding: 10px; 
 	background-color: black; 
 	color: white;
 	width: 100%;
