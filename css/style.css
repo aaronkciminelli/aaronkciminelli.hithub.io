@@ -1,40 +1,44 @@
-/* navbar  */ 
-nav {
-    margin: 0;
-    text-align: left;
-	height: 31px;
-	padding: 10px;
+/* CSS Document */
+
+body{ 
+}
+
+.header {
+	background-color: black; 
+	padding: 20px; 
+	text-align: center;
+	color: white;
+	font-size: 20pt; 
+}
+.nav {
+	overflow: hidden; 
+	background-color: cornflowerblue; 
+
+}
+.nav a { 
+	float: left; 
+	display: block; 
+	color: black; 
+	text-align: center; 
+	padding: 14px 16px;
 	text-decoration: none; 
 }
 
-a {
-    color: black; 
-    font-size: 21px;
+.nav a:hover {
+	background-color: black;
+	color: white; 
 }
 
-/* Body  */ 
-body {
-    width: 100%; 
-    height: 100%;
-	background: rgb(126,155,170);
-	background: linear-gradient(180deg, rgba(126,155,170,1) 0%, rgba(255,255,255,1) 94%, rgba(255,255,255,1) 100%);
-    margin: 0;
-    margin-bottom: 10px; 
+.nav a.active {
+  background-color: black;
+  color: white;
 }
-
-/* Image and Icons */ 
-aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 200px;
-    margin-right: 2rem;
-    z-index: 1;
+sidesection {
+	float: left; 
+	padding: 10px;
+	width: 17%; 
+	
 }
-
 img {
     width: 200px; 
     margin-top: 5px;
@@ -59,145 +63,13 @@ img {
 .social-media-icons a {
     color: #000;
 }
-
-/* intro header */ 
-
-.hiname { 
-	text-align: center;
-	padding-top: 100px;
-	margin-inline-start: 35px;
-	margin-left: 0px;
-	padding-right: 200px; 
-	} 
-
-.hiname h1{
-	font-size: 40pt;
-	text-shadow: 2px 6px 20px;
+ 
+footer { 
+	display: block; 
+	text-align: center; 
+	padding: 3px; 
+	background-color: black; 
+	color: white; 
 }
-
-.hiname p { 
-	font-size: 17pt;
-	font-family: cursive;
-
-}
-
-hr {
-    height: 2px;
-    background-color: #000000;
-    border: none;
-    margin: 20px 0;
-}
-
-
-/* welcome */ 
-section {
-    margin-top: 200px;
-    margin-left: 20px;
-	margin-right: 20px;
-    position: relative; 
-	border-bottom-left-radius: 30px; 
-	border-bottom-right-radius: 30px; 
-	border-top-left-radius: 95px; 
-	border-top-right-radius: 95px; 
-}
-
-section h1{ 
-	padding-top: 20px; 
-    text-align: center;
-    font-size: 30pt;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; 
-}
-
-section p { 
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	padding-left: 20px;
-	padding-right: 20px;
-	font-size: 14pt; 
-}
-
-/* About */ 
-
-main{
-	margin-top: 5rem; 
-    margin-left: 10px;
-	position: relative;
-	border-bottom-left-radius: 30px; 
-	border-bottom-right-radius: 30px; 
-	border-top-left-radius: 95px; 
-	border-top-right-radius: 95px; 
-}
-
-main h1 {
-	padding-top: 20px;
-    text-align: center; 
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	font-size: 30pt;
-	
-}
-
-main p { 
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; 
-    font-size: 14pt;
-	padding-left: 20px;
-	padding-right: 20px; 
-}
-
-
-/* Footer */ 
-
-footer {
-	margin-top: 40px; 
-	margin-bottom: 0; 
-    text-align: center; 
-    height: 60px; /* decrease the height of the footer */
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    position: static; /* make the footer fixed in position */
-    width: 100%; /* set the width to 100% */
-}
-
-/* Media queries for smaller tablets */
-@media only screen and (max-width: 992px) {
-  aside {
-    top: 60px;
-    right: 10px;
-    width: 100px;
-    margin-right: 1rem;
-  }
-  img {
-    width: 100px;
-    margin-right: 0;
-  }
-  .social-media-icons {
-    margin-right: 0;
-  }
-  .hiname {
-    padding-top: 80px;
-    margin-inline-start: 0;
-    padding-right: 0;
-  }
-  section {
-    margin-top: 100px;
-    border-radius: 0;
-  }
-  main {
-    margin-top: 3rem;
-    border-radius: 0;
-  }
-  main h1 {
-    font-size: 25pt;
-  }
-  section h1 {
-    font-size: 25pt;
-  }
-  section p {
-    font-size: 12pt;
-  }
-  main p {
-    font-size: 12pt;
-  }
-}
-
 
 
