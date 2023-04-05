@@ -68,7 +68,7 @@ profile-container {
     display: flex;
     list-style: none;
     padding: 0;
-	margin-right: 100px; 
+    margin: 0 50px; 
 }
 
 .social-media-icons li {
