@@ -165,7 +165,7 @@ footer {
 
     .social-media-icons {
         justify-content: center;
-        margin-right: 0;
+        margin-left: 10px; 
     }
     .section {
         margin: 0 auto;
