@@ -1,0 +1,45 @@
+
+
+.center {
+  width: 1000px;
+  margin-left: 20%;
+  margin-top: -300px; 
+
+}
+section a {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  display: block;
+  font-size: 1.3em;
+  letter-spacing: 3px;
+  overflow: hidden;
+  border-bottom: 3px solid #aaa69d;
+}
+section p {
+  padding: 10px;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  background: #27ae60;
+  color: #fff;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: 2s;
+}
+section:target p {
+  height: 10em;
+  opacity: 1;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .center {
+    width: 100%;
+    margin-top: 0; 
+    margin-left: 0;
+  }
+}
+
