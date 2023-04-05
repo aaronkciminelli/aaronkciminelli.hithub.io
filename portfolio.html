@@ -32,20 +32,33 @@
 		</div>
 		<div class="center">
 			<section id="item1">
-			  <a href="#item1">Lorem Ipum is the dummy text</a>
-			  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vel beatae consequatur suscipit vero magnam nulla molestias alias praesentium atque, commodi error quis, unde aliquam distinctio blanditiis! Beatae, temporibus reprehenderit!</p>
+			  <a href="#item1">Quote Generator (link comming soon)</a>
+			  <p>The code starts by defining variables for various elements of the webpage such as the container for the quote, the quote text, author text, Twitter button, and a loader. The apiQuotes variable is an empty array that will later store quotes fetched from an external API.</p>
+			  <p>The <b>`showLoadingSpin()`</b> function shows the loader and hides the quote container while the <b>`removeLoadingSpin()`</b> function hides the loader and shows the quote container. The <b>`newQuote()`</b> function displays a random quote fetched from the apiQuotes array, sets the quote and author texts, and styles the quote text based on its length. The <b>`getQuotes()`</b> function uses the fetch() method to fetch quotes from an external API and then converts the response to JSON format. It then calls the <b>`newQuote()`</b> function to display a new quote. The <b>`tweetQuote()`</b> function creates a Twitter URL that includes the quote and author texts, and opens it in a new tab when the Twitter button is clicked.</p>
+			  <p>The <b>`newQuote()`</b> function is called when the page loads, and the <b>`getQuotes()`</b> function is called when the page loads and when the <b>`newQuote()`</b> function is called. The <b>`tweetQuote()`</b> function is called when the Twitter button is clicked.</p>
 			</section>
 			<section id="item2">
-			  <a href="#item2">Lorem Ipum is the dummy text</a>
-			  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vel beatae consequatur suscipit vero magnam nulla molestias alias praesentium atque, commodi error quis, unde aliquam distinctio blanditiis! Beatae, temporibus reprehenderit!</p>
+			  <a href="#item2">Infinite Scroll (link comming soon)</a>
+			  <p>This is a JavaScript code for a portfolio website that fetches random images from the Unsplash API and displays them in a responsive grid. The code uses event listeners to check when images are loaded and when the user has scrolled to the bottom of the page, in order to load more images. It also includes a loading spinner that appears while images are being loaded.</p>
+
+			<p>In summary, this code dynamically loads and displays random images from Unsplash using JavaScript and the Unsplash API, and provides a responsive, visually appealing grid for a portfolio website.</p>
 			</section>
 			<section id="item3">
-			  <a href="#item3">Lorem Ipum is the dummy text</a>
-			  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vel beatae consequatur suscipit vero magnam nulla molestias alias praesentium atque, commodi error quis, unde aliquam distinctio blanditiis! Beatae, temporibus reprehenderit!</p>
+			  <a href="#item3">Joke Generator (link comming soon)</a>
+			  <p>This is a JavaScript code that fetches jokes from a joke API and uses the VoiceRSS Text-to-Speech API to convert the jokes to audio. The code includes an event listener on a button that triggers the API request for a new joke, and a function to disable the button while the joke is being played.</p>
+			  
+			  <p>The <b>`getJokes()`</b> function fetches a random joke from the Joke API, formats it, and passes it to the tellMe() function, which uses the VoiceRSS API to convert the joke to an audio file. The <b>`toggleButton()`</b> function is used to disable the button while the joke is being played, and is triggered by an event listener on the audioElement that listens for when the audio has ended.</p>
+			  
+			  <p>Overall, this code allows users to listen to random jokes using text-to-speech technology, and includes functionality to prevent the button from being clicked while a joke is being played.</p>
 			</section>
 			<section id="item4">
-			  <a href="#item4">Lorem Ipum is the dummy text</a>
-			  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt vel beatae consequatur suscipit vero magnam nulla molestias alias praesentium atque, commodi error quis, unde aliquam distinctio blanditiis! Beatae, temporibus reprehenderit!</p>
+			  <a href="#item4">Picture in Picture (link comming soon)</a>
+			  <p>This is a JavaScript code that allows users to share their screen using the built-in screen sharing functionality of modern web browsers. The code initializes two variables, videoElement and button, which are used to reference DOM elements in the HTML document.</p>
+			  
+			  <p>The <b>`selectMediaStream()`</b> function prompts the user to select a media stream (i.e., a screen or window to share), and passes the selected stream to the videoElement, which is then played. The function also includes an event listener to start playing the video once its metadata has loaded.</p>
+			  
+			  <p>The button element includes an event listener that triggers the <b>`requestPictureInPicture()`</b> method when clicked. This method allows the video to be played in a Picture-in-Picture (PiP) window, which is a floating window that can be moved around the screen while the video continues to play.</p>
+			  <p>Overall, this code provides a simple and effective way for users to share their screen and play it in a Picture-in-Picture window using built-in web browser functionality.</p>
 			</section>
 		  </div>
 
