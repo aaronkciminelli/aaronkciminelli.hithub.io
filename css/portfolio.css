@@ -19,21 +19,30 @@ section a {
   border-bottom: 3px solid #aaa69d;
 }
 section p {
-  padding: 10px;
   overflow: hidden;
-  height: 0;
   opacity: 0;
   background: #27ae60;
   color: #fff;
-  overflow: hidden;
   letter-spacing: 2px;
-  transition: 0.5s;
+  transition: 0.1s;
 }
 section:target p {
-  height: 10em;
   opacity: 1;
   padding: 20px;
 }
+
+section a::after {
+  content: '\25BC'; /* Unicode character for down arrow */
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+section:target a::after {
+  content: '\25B2'; /* Unicode character for up arrow */
+  transform: rotate(180deg);
+}
+
 .button-container { 
     margin-top: 15px;
     display: flex;
@@ -51,6 +60,7 @@ button {
     outline: none;
     padding: 0.5rem 1.8rem; 
     box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+    margin-left: 360px;
 }
 
 button:hover { 
@@ -69,6 +79,10 @@ button:active {
     width: 100%;
     margin-top: 0; 
     margin-left: 0;
+  }
+
+  button { 
+    margin-left: 60px;
   }
 }
 

@@ -35,19 +35,26 @@
 			<section id="item1">
 				<a href="#item1">Quote Generator (Click Me)</a>
 				<div class="button-container">
-			  <a href="QuoteGen.html" target="_blank" >
-				  <button id="quote">View Quote Generator</button>
-			  </a>
-				  </div>
-			  <p>The code starts by defining variables for various elements of the webpage such as the container for the quote, the quote text, author text, Twitter button, and a loader. The apiQuotes variable is an empty array that will later store quotes fetched from an external API.</p>
-			  <p>The <b>`showLoadingSpin()`</b> function shows the loader and hides the quote container while the <b>`removeLoadingSpin()`</b> function hides the loader and shows the quote container. The <b>`newQuote()`</b> function displays a random quote fetched from the apiQuotes array, sets the quote and author texts, and styles the quote text based on its length. The <b>`getQuotes()`</b> function uses the fetch() method to fetch quotes from an external API and then converts the response to JSON format. It then calls the <b>`newQuote()`</b> function to display a new quote. The <b>`tweetQuote()`</b> function creates a Twitter URL that includes the quote and author texts, and opens it in a new tab when the Twitter button is clicked.</p>
-			  <p>The <b>`newQuote()`</b> function is called when the page loads, and the <b>`getQuotes()`</b> function is called when the page loads and when the <b>`newQuote()`</b> function is called. The <b>`tweetQuote()`</b> function is called when the Twitter button is clicked.</p>
+				<button onclick="window.open('QuoteGen.html')">View Quote Generator</button>
+				</div>
+
+				<p>To start, I defined variables for different elements of the webpage such as the container for the quote, the quote text, author text, Twitter button, and a loader. I also created an empty array called 'apiQuotes' which stores quotes fetched from an external API.</p>
+				<p>Next, I created a couple of functions to help with displaying and hiding elements. The 'showLoadingSpin()' function shows the loader and hides the quote container while the 'removeLoadingSpin()' function does the opposite.</p>
+				<p>The 'newQuote()' function displays a random quote fetched from the 'apiQuotes' array, sets the quote and author texts, and styles the quote text based on its length.</p>
+				<p>To fetch the quotes, I used the fetch() method within the 'getQuotes()' function. This function retrieves the quotes from an external API and converts the response to JSON format. Then, it calls the 'newQuote()' function to display a new quote.</p>
+				<p>Lastly, I created a function called 'tweetQuote()' that creates a Twitter URL that includes the quote and author texts, and opens it in a new tab when the Twitter button is clicked.</p>
+				<p>The 'newQuote()' function is called when the page loads, and the 'getQuotes()' function is called both when the page loads and when the 'newQuote()' function is called. The 'tweetQuote()' function is called when the Twitter button is clicked.</p>
+			  
 			</section>
 			<section id="item2">
-			  <a href="#item2">Infinite Scroll (link comming soon)</a>
-			  <p>This is a JavaScript code for a portfolio website that fetches random images from the Unsplash API and displays them in a responsive grid. The code uses event listeners to check when images are loaded and when the user has scrolled to the bottom of the page, in order to load more images. It also includes a loading spinner that appears while images are being loaded.</p>
+			  <a href="#item2">Infinite Scroll (Click Me)</a>
+			<div class="button-container">
+				<button onclick="window.open('infinite.html')">View Infinite Scroll</button>
+			</div>
 
-			<p>In summary, this code dynamically loads and displays random images from Unsplash using JavaScript and the Unsplash API, and provides a responsive, visually appealing grid for a portfolio website.</p>
+			<p>I recently learned how to fetch random images from the Unsplash API and display them in a responsive grid for my portfolio website. I'm excited to share with you the JavaScript code I used to accomplish this.</p>
+			<p>The code uses event listeners to check for loaded images and when the user has reached the bottom of the page, allowing for the dynamic loading of more images. Additionally, a loading spinner appears while the images are being loaded to enhance the user experience.</p>
+			<p>The Unsplash API offers a wide variety of high-quality images that can enhance the visual appeal of any website. This API only allows 50 retrieves an hour, so if you dont see any images please check back later. </p>
 			</section>
 			<section id="item3">
 			  <a href="#item3">Joke Generator (link comming soon)</a>
