@@ -35,6 +35,8 @@ section:target p {
   padding: 20px;
 }
 
+
+
 @media (max-width: 600px) {
   .center {
     width: 100%;
