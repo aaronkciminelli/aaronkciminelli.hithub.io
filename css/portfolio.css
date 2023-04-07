@@ -21,7 +21,7 @@ section a {
 section p {
   overflow: hidden;
   opacity: 0;
-  background: #27ae60;
+  background: cornflowerblue;
   color: #fff;
   letter-spacing: 2px;
   transition: 0.1s;
@@ -70,6 +70,19 @@ button:hover {
 button:active { 
     transform: translate(0, 0.3rem);
     box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.text-box {
+  width: 40%;
+  margin-left: 25%;
+  text-align: justify;
+  background: rgba(100, 148, 237, 0.43);
+  color: white; 
+  border-radius: 10px;
+  padding: 30px;
+}
+.arrow {
+  color: black;
 }
 
 
