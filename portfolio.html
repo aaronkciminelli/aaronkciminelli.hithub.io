@@ -1,20 +1,18 @@
-<!doctype html>
-<html>
-<head>
-	<!-- Google tag (gtag.js) -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/portfolio.css" />
+		<link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=aaronciminelli.com" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<script defer src="script/script.js"></script>
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/portfolio.css" />
-	<link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=aaronciminelli.com">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-	<link href="../jquery-mobile/jquery.mobile.structure-1.3.0.min.css" rel="stylesheet" type="text/css">
-	
-	<title> Aaron Ciminelli</title>
-</head>
-<body>
-		<div class="header"> Aaron's Webpage </div>
+		<title>Aaron Ciminelli</title>
+	</head>
+	<body>
+		<div class="header">Aaron's Webpage</div>
 		<div class="nav">
 			<a href="index.html"> Home</a>
 			<a href="portfolio.html"> Portfolio </a>
@@ -26,94 +24,121 @@
 			<img src="assets/picture.jpg" class="myImg" alt="Profile Image" />
 			<div id="profile-container">
 				<ul class="social-media-icons">
-					<li><a href="https://github.com/ACSNHUREPOS"><i class="fab fa-github"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/aaron-ciminelli-92502a1b7/"><i class="fab fa-linkedin-in"></i></a></li>
+					<li>
+						<a href="https://github.com/ACSNHUREPOS"><i class="fab fa-github"></i></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/aaron-ciminelli-92502a1b7/"><i class="fab fa-linkedin-in"></i></a>
+					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="center">
 			<div class="text-box" id="text-box">
-				<p> Soon, I will be working on a project that will incorporate all of these projects onto this site. </p>
-				<p> For now, you can check out the projects below. </p>
-				<p>Click on the down arrow  "<span class="arrow">&#9660;</span>" to read More information about the projects.</p>
+				<p>Soon, I will be working on a project that will incorporate all of these projects onto this site.</p>
+				<p>For now, you can check out the projects below.</p>
+				<p>Click on the down arrow "<span class="arrow">&#9660;</span>" to read More information about the projects.</p>
 			</div>
 			<section id="Quote Generator">
 				<a href="#Quote Generator">Quote Generator (Click Me For A Description)</a>
 				<div class="button-container">
-				<button onclick="window.open('QuoteGen.html')">View Quote Generator</button>
+					<button onclick="window.open('QuoteGen.html')">View Quote Generator</button>
 				</div>
 
-				<p>To start, I defined variables for different elements of the webpage such as the container for the quote, the quote text, author text, Twitter button, and a loader. I also created an empty array called 'apiQuotes' which stores quotes fetched from an external API.</p>
-				<p>Next, I created a couple of functions to help with displaying and hiding elements. The 'showLoadingSpin()' function shows the loader and hides the quote container while the 'removeLoadingSpin()' function does the opposite.</p>
+				<p>
+					To start, I defined variables for different elements of the webpage such as the container for the quote, the quote text, author text, Twitter button, and a loader. I also created an empty array called 'apiQuotes' which
+					stores quotes fetched from an external API.
+				</p>
+				<p>
+					Next, I created a couple of functions to help with displaying and hiding elements. The 'showLoadingSpin()' function shows the loader and hides the quote container while the 'removeLoadingSpin()' function does the
+					opposite.
+				</p>
 				<p>The 'newQuote()' function displays a random quote fetched from the 'apiQuotes' array, sets the quote and author texts, and styles the quote text based on its length.</p>
-				<p>To fetch the quotes, I used the fetch() method within the 'getQuotes()' function. This function retrieves the quotes from an external API and converts the response to JSON format. Then, it calls the 'newQuote()' function to display a new quote.</p>
+				<p>
+					To fetch the quotes, I used the fetch() method within the 'getQuotes()' function. This function retrieves the quotes from an external API and converts the response to JSON format. Then, it calls the 'newQuote()' function
+					to display a new quote.
+				</p>
 				<p>Lastly, I created a function called 'tweetQuote()' that creates a Twitter URL that includes the quote and author texts, and opens it in a new tab when the Twitter button is clicked.</p>
-				<p>The 'newQuote()' function is called when the page loads, and the 'getQuotes()' function is called both when the page loads and when the 'newQuote()' function is called. The 'tweetQuote()' function is called when the Twitter button is clicked.</p>
-			  
+				<p>
+					The 'newQuote()' function is called when the page loads, and the 'getQuotes()' function is called both when the page loads and when the 'newQuote()' function is called. The 'tweetQuote()' function is called when the
+					Twitter button is clicked.
+				</p>
 			</section>
 			<section id="Infinite Scroll">
-			  <a href="#Infinite Scroll">Infinite Scroll (Click Me For A Description)</a>
-			<div class="button-container">
-				<button onclick="window.open('infinite.html')">View Infinite Scroll</button>
-			</div>
+				<a href="#Infinite Scroll">Infinite Scroll (Click Me For A Description)</a>
+				<div class="button-container">
+					<button onclick="window.open('infinite.html')">View Infinite Scroll</button>
+				</div>
 
-			<p>I recently learned how to fetch random images from the Unsplash API and display them in a responsive grid for my portfolio website. I'm excited to share with you the JavaScript code I used to accomplish this.</p>
-			<p>The code uses event listeners to check for loaded images and when the user has reached the bottom of the page, allowing for the dynamic loading of more images. Additionally, a loading spinner appears while the images are being loaded to enhance the user experience.</p>
-			<p>The Unsplash API offers a wide variety of high-quality images that can enhance the visual appeal of any website. This API only allows 50 retrieves an hour, so if you dont see any images please check back later. </p>
+				<p>I recently learned how to fetch random images from the Unsplash API and display them in a responsive grid for my portfolio website. I'm excited to share with you the JavaScript code I used to accomplish this.</p>
+				<p>
+					The code uses event listeners to check for loaded images and when the user has reached the bottom of the page, allowing for the dynamic loading of more images. Additionally, a loading spinner appears while the images are
+					being loaded to enhance the user experience.
+				</p>
+				<p>The Unsplash API offers a wide variety of high-quality images that can enhance the visual appeal of any website. This API only allows 50 retrieves an hour, so if you dont see any images please check back later.</p>
 			</section>
 			<section id="Joke Generator">
-			  <a href="#Joke Generator">Joke Generator (Click Me For A Description)</a>
-			  <div class="button-container">
-				<button onclick="window.open('joke.html')">Tell Me a Joke</button>
-			</div>
+				<a href="#Joke Generator">Joke Generator (Click Me For A Description)</a>
+				<div class="button-container">
+					<button onclick="window.open('joke.html')">Tell Me a Joke</button>
+				</div>
 
-			<p>Hey there! I want to share with you a JavaScript code I wrote that fetches jokes from a joke API and converts them to audio using the VoiceRSS Text-to-Speech API.</p>
+				<p>Hey there! I want to share with you a JavaScript code I wrote that fetches jokes from a joke API and converts them to audio using the VoiceRSS Text-to-Speech API.</p>
 
-			<p>The code features an event listener on a button that triggers the API request for a new joke, and a function to disable the button while the joke is being played. The <b>`getJokes()`</b> function fetches a random joke from the Joke API, formats it, and passes it to the <b>`tellMe()`</b> function, which uses the VoiceRSS API to convert the joke to an audio file.</p>
-			<p>Additionally, the <b>`toggleButton()`</b> function is used to disable the button while the joke is being played. This function is triggered by an event listener on the audio element, which listens for when the audio has ended.</p>
-			<p>Thanks for checking out my code, and have fun listening to some jokes!</p>
+				<p>
+					The code features an event listener on a button that triggers the API request for a new joke, and a function to disable the button while the joke is being played. The <b>`getJokes()`</b> function fetches a random joke
+					from the Joke API, formats it, and passes it to the <b>`tellMe()`</b> function, which uses the VoiceRSS API to convert the joke to an audio file.
+				</p>
+				<p>
+					Additionally, the <b>`toggleButton()`</b> function is used to disable the button while the joke is being played. This function is triggered by an event listener on the audio element, which listens for when the audio has
+					ended.
+				</p>
+				<p>Thanks for checking out my code, and have fun listening to some jokes!</p>
 			</section>
 			<section id="Picture in Picture">
 				<a href="#Picture in Picture">Picture in Picture (Click Me For A Description)</a>
 				<div class="button-container">
-				<button onclick="window.open('pip.html')">Picture in Picture</button>
-			</div>
+					<button onclick="window.open('pip.html')">Picture in Picture</button>
+				</div>
 				<p>Hi there! I'm excited to share with you a JavaScript code that enables users to share their screen and play it in a Picture-in-Picture (PiP) window using built-in web browser functionality.</p>
-				<p>The code initializes two variables, videoElement and button, which reference DOM elements in the HTML document. The <b>`selectMediaStream()`</b> function prompts the user to select a media stream, such as a screen or window to share, and passes the selected stream to the videoElement, which is then played. The function also includes an event listener to start playing the video once its metadata has loaded.</p>
-				<p>The button element includes an event listener that triggers the <b>`requestPictureInPicture()`</b> method when clicked. This method allows the video to be played in a Picture-in-Picture window, which is a floating window that can be moved around the screen while the video continues to play.</p>
+				<p>
+					The code initializes two variables, videoElement and button, which reference DOM elements in the HTML document. The <b>`selectMediaStream()`</b> function prompts the user to select a media stream, such as a screen or
+					window to share, and passes the selected stream to the videoElement, which is then played. The function also includes an event listener to start playing the video once its metadata has loaded.
+				</p>
+				<p>
+					The button element includes an event listener that triggers the <b>`requestPictureInPicture()`</b> method when clicked. This method allows the video to be played in a Picture-in-Picture window, which is a floating window
+					that can be moved around the screen while the video continues to play.
+				</p>
 				<p>Thanks for checking out my code, and happy screen sharing!</p>
 			</section>
 			<section id="Toggle Light Dark Mode">
-			<a href="#Toggle Light Dark Mode">Light Dark Mode (Click Me For A Description)</a>
-			<div class="button-container" >
-				<button onclick="window.open('ldm.html')">Light Dark Mode</button>
-			</div>
-			<p> This code is for a portfolio website and it is used to toggle between dark and light themes dynamically. The code starts by selecting various HTML elements using their IDs or tag names.</p>
-			<p>The toggleSwitch variable selects the checkbox input element that will be used to toggle between the two themes. The nav, toggleIcon, image1, image2, image3, and textBox variables select different HTML elements that will be modified when the user toggles between the two themes.</p>
-			<p>Next, there are two functions defined in the code: imageMode() and toggleDarkLightMode(). The imageMode() function is used to change the color of the images on the page when the theme is changed. The toggleDarkLightMode() function is used to toggle between the dark and light modes of the website.</p>
-			<p>The switchTheme() function is the main function that is called when the user toggles the switch. When the switch is toggled, this function checks if it is in dark or light mode. If the switch is in dark mode, it changes the background color of the nav and textBox elements, changes the text of the toggle icon, and replaces the sun icon with the moon icon. It also calls the imageMode() function to change the color of the images on the page.</p>
-			<p>When the switch is toggled to the light mode, it reverses the changes made in the dark mode. Additionally, the localStorage API is used to save the user's theme preference so that it persists across page reloads.</p>
-			<p>Finally, an event listener is added to the toggleSwitch element to listen for changes. Additionally, the code checks for the user's previously saved theme preference in the localStorage and applies it if it exists.</p>
+				<a href="#Toggle Light Dark Mode">Light Dark Mode (Click Me For A Description)</a>
+				<div class="button-container">
+					<button onclick="window.open('ldm.html')">Light Dark Mode</button>
+				</div>
+				<p>This code is for a portfolio website and it is used to toggle between dark and light themes dynamically. The code starts by selecting various HTML elements using their IDs or tag names.</p>
+				<p>
+					The toggleSwitch variable selects the checkbox input element that will be used to toggle between the two themes. The nav, toggleIcon, image1, image2, image3, and textBox variables select different HTML elements that will
+					be modified when the user toggles between the two themes.
+				</p>
+				<p>
+					Next, there are two functions defined in the code: imageMode() and toggleDarkLightMode(). The imageMode() function is used to change the color of the images on the page when the theme is changed. The
+					toggleDarkLightMode() function is used to toggle between the dark and light modes of the website.
+				</p>
+				<p>
+					The switchTheme() function is the main function that is called when the user toggles the switch. When the switch is toggled, this function checks if it is in dark or light mode. If the switch is in dark mode, it changes
+					the background color of the nav and textBox elements, changes the text of the toggle icon, and replaces the sun icon with the moon icon. It also calls the imageMode() function to change the color of the images on the
+					page.
+				</p>
+				<p>When the switch is toggled to the light mode, it reverses the changes made in the dark mode. Additionally, the localStorage API is used to save the user's theme preference so that it persists across page reloads.</p>
+				<p>Finally, an event listener is added to the toggleSwitch element to listen for changes. Additionally, the code checks for the user's previously saved theme preference in the localStorage and applies it if it exists.</p>
 			</section>
 		</div>
 
-		
-
-
-		<footer> 
+		<footer>
 			<p>Copyright &copy; 2023 Aaron Ciminelli. All Rights Reserved</p>
-			</footer>å
-				<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-92B1P8QPJS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-92B1P8QPJS');
-</script>
-
-</body>
+		</footer>
+		å
+		<!-- Google tag (gtag.js) -->
+	</body>
 </html>
-
-	

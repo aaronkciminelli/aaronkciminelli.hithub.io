@@ -1,14 +1,14 @@
 // JavaScript Document
 
-const form = document.querySelector('#contact-form');
 
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  const name = document.querySelector('#name').value;
-  const email = document.querySelector('#email').value;
-  const message = document.querySelector('#message').value;
-
-  // perform form validation here
-  // send form data to server using fetch() or XMLHttpRequest()
-});
+function killCopy(e){
+  return false;
+}
+function reEnable(){
+  return true;
+}
+document.onselectstart=new Function ("return false");
+if (window.sidebar){
+  document.onmousedown=killCopy;
+  document.onclick=reEnable;
+}
