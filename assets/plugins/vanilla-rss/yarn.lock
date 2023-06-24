@@ -2432,9 +2432,9 @@ teeny-request@^3.11.3:
     uuid "^3.3.2"
 
 terser@^4.1.0:
-  version "4.3.5"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-4.3.5.tgz#0e2b75173037e5aad827bd45c3bfe673eb7104b1"
-  integrity sha512-kWIfcqVIuiCnYpubW3Xx3hY9Gjd9XoQZKDcpTFx4aUDjWK2Oev1/RiskbTcJ9oANZmRdtSfGy/aeDYk+xA3I6A==
+  version "4.8.1"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-4.8.1.tgz#a00e5634562de2239fd404c649051bf6fc21144f"
+  integrity sha512-4GnLC0x667eJG0ewJTa6z/yXrbLGv80D9Ru6HIpCQmO+Q4PfEtBFi0ObSckqwL6VyQv/7ENJieXHo2ANmdQwgw==
   dependencies:
     commander "^2.20.0"
     source-map "~0.6.1"
