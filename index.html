@@ -1,74 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=aaronciminelli.com" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-		<title>Aaron Ciminelli</title>
-	</head>
-	<body>
-		<div class="header">Aaron's Webpage</div>
-		<div class="nav">
-			<a href="index.html"> Home</a>
-			<a href="portfolio.html"> Portfolio </a>
-			<!-- <a href="index1.html"> Blog </a>
-			<a href="index1.html"> Store</a> -->
-			<a href="contact.html"> Contact</a>
-		</div>
-		<div class="profileImage">
-			<img src="assets/picture.jpg" class="myImg" alt="Profile Image" />
-			<div id="profile-container">
-				<ul class="social-media-icons">
-					<li>
-						<a href="https://github.com/ACSNHUREPOS"><i class="fab fa-github"></i></a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/aaron-ciminelli-92502a1b7/"><i class="fab fa-linkedin-in"></i></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="section" id="wlcm">
-			<h1>Welcome To My Webpage</h1>
-			<p>
-				This site is a showcase of my self-taught skills in web development. I have written and coded this website without the use of any external site builders, using HTML, CSS, and JavaScript.
-			</p>
-			<p>
-				My main goal for this website is to showcase my skills and provide easy access to my portfolio, blog, and contact information. I believe that a website is a great platform to express myself creatively, and I am excited to
-				share my work with you. Whether you are here to learn more about me or to collaborate on a project, I hope you find this website informative and enjoyable. Thank you for visiting!
-			</p>
-		</div>
+<head>
+    <title>Aaron Ciminelli</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aaron Ciminelli's Portfilio">
+    <meta name="author" content="Aaron Ciminelli">    
+    <link rel="shortcut icon" href="logo.PNG">  
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
+    <!-- github activity css -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
 
-		<article>
-			<h1>About Me</h1>
-			<p>
-				I am a highly experienced US Military Veteran who thrives in fast-paced and demanding environments. Throughout my career, I have honed my problem-solving skills and developed the ability to invent successful solutions, which
-				have proven to be invaluable in my past experiences. I am proud of my history of effectively managing and evaluating staff performance to identify areas for improvement, leading to improved team performance.
-			</p>
-			<p>
-				One of my greatest strengths is developing and implementing improved training procedures, organizational policies, and streamlined processes. I take pride in my verbal and written communication skills. I have a proven track
-				record of cultivating positive relationships that have enabled me to consistently exceed goals.
-			</p>
-			<p>
-				In addition to my experience as a highly experienced US Military Veteran, I am also a current student set to graduate in September with a Bachelor's degree in Computer Science. My studies have provided me with a deep
-				understanding of programming languages, software development methodologies, and computer systems. I have gained experience in developing software applications, solving complex problems, and collaborating with
-				cross-functional teams.
-			</p>
-			<p>
-				I have developed strong analytical skills and a keen eye for detail, which has helped me identify and resolve errors in my work. I have also become adept at working under pressure and meeting tight deadlines, both of which
-				are essential skills in the tech industry.
-			</p>
-			<p>
-				I am excited to merge my academic knowledge with my professional experience to make a significant contribution to the tech industry. With a Bachelor's degree in Computer Science and years of experience in fast-paced,
-				demanding environments, I am confident that I can bring unique perspectives and skill sets to any team.
-			</p>
-		</article>
-		<footer>
-			<p>Copyright &copy; 2023 Aaron Ciminelli. All Rights Reserved</p>
-		</footer>
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
 
-	</body>
-</html>
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">     
+	        <div class="row align-items-center">
+			    <div class="col">         
+		            <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile.png" alt="profile image" width="200" height="200" />
+		            <div class="profile-content">
+		                <h1 class="name">Aaron Ciminelli</h1>
+		                <h2 class="desc">Web App Developer</h2>   
+		                <ul class="social list-inline">
+		                    
+		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/aaron-ciminelli-92502a1b7/"><i class="fab fa-linkedin-in"></i></a></li>
+		                    <li class="list-inline-item"><a href="https://github.com/aaronkciminelli"><i class="fab fa-github-alt"></i></a></li>      
+		                    <li class="list-inline-item last-item"><a href="https://codepen.io/aaronkciminelli"><i class="fab fa-codepen"></i></a></li>                
+		                </ul> 
+		            </div><!--//profile-->
+			    </div><!--//col-->
+	            <div class="col-12 col-md-auto">
+		            <div class="dark-mode-switch d-flex">
+						<div class="form-check form-switch mx-auto mx-md-0">
+							<input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
+							<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+						</div>
+			        </div><!--//dark-mode-switch-->
+	                <a class="btn btn-cta-primary" href="mailto:aaronciminelli@gmail.com?subject=Inquiry%20from%20Website" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>        
+	            </div><!--//col-->
+	        </div><!--//row-->         
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper py-5">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>I am a highly experienced US Military Veteran who thrives in fast-paced and demanding environments. Throughout my career, I have honed my problem-solving skills and developed the ability to invent successful solutions, which have proven to be invaluable in my past experiences. I am proud of my history of effectively managing and evaluating staff performance to identify areas for improvement, leading to improved team performance.</p>
+                            
+                            <p>One of my greatest strengths is developing and implementing improved training procedures, organizational policies, and streamlined processes. I take pride in my verbal and written communication skills. I have a proven track record of cultivating positive relationships that have enabled me to consistently exceed goals.</p>
+                            
+                            <p>In addition to my experience as a highly experienced US Military Veteran, I am also a current student set to graduate in September with a Bachelor's degree in Computer Science. My studies have provided me with a deep understanding of programming languages, software development methodologies, and computer systems. I have gained experience in developing software applications, solving complex problems, and collaborating with cross-functional teams.</p>
+                            
+                            <p>I have developed strong analytical skills and a keen eye for detail, which has helped me identify and resolve errors in my work. I have also become adept at working under pressure and meeting tight deadlines, both of which are essential skills in the tech industry.</p>
+                            
+                            <p>I am excited to merge my academic knowledge with my professional experience to make a significant contribution to the tech industry. With a Bachelor's degree in Computer Science and years of experience in fast-paced, demanding environments, I am confident that I can bring unique perspectives and skill sets to any team.</p>                         
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="latest section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">School Projects</h2>
+                        <div class="content">    
+                                               
+                            <div class="item featured text-center">
+                                
+                                <div class="featured-image has-ribbon">
+                                    <a href="https://github.com/ACSNHUREPOS" target="_blank">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/undraw.png" alt="SNHU" />
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">Proud Coder</div>
+                                    </div>
+                                </div>
+                                    
+                                <div class="desc text-start">                                    
+                                    <p>Throughout my academic journey, I have embarked on numerous programming projects covering a wide range of disciplines. GitHub has been instrumental in organizing and presenting these projects in a structured and accessible manner. While I cannot delve into the specifics of each project within this post, I would like to provide a brief overview of the areas I have explored.</p>
+
+                                    <ol>
+                                        <li>C++: I have developed projects in C++ that demonstrate my understanding of core programming concepts, such as data structures, algorithms, and object-oriented programming.</li>
+                                        <li>Java: Through Java, I have delved into building applications, focusing on topics like graphical user interfaces, database connectivity, and multithreading.</li>
+                                        <li>Python: I have leveraged Python to tackle various challenges, including data analysis, machine learning, web scraping, and scripting.</li>
+                                        <li>Web Development: With a strong foundation in HTML, CSS, and JavaScript, I have created responsive and visually appealing websites. Additionally, I have explored popular frameworks such as Angular and utilized libraries like Bootstrap and Handlebars to enhance user experience.</li>
+                                        <li>Database Management: I have worked with MongoDB, a NoSQL database, gaining hands-on experience in data modeling, querying, and interacting with non-relational databases.</li>
+                                        <li>Mobile Development: My proficiency extends to Android development IOS Development using Swift, allowing me to develop mobile applications with sleek and intuitive interfaces.</li>
+                                      </ol>
+                                </div><!--//desc-->         
+                                <!-- <a class="btn btn-cta-secondary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank"><i class="fas fa-thumbs-up"></i> Back my project</a>                  -->
+                            
+                            
+                            <a class="btn btn-cta-secondary" href="#">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+                <section class="experience section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Full Stack Web Developer - <span class="place"><a href="#"> EWA Beach, HI </a></span> <span class="year">(2022 - Present)</span></h3>
+                                <p>As a Fullstack Web Developer, I collaborate with other freelancers to design, develop, and implement innovative web applications. I analyze project requirements, translate them into technical specifications, and contribute to the planning and execution of development projects. Leveraging my expertise in frontend and backend technologies, I create intuitive user interfaces using HTML, CSS, and JavaScript frameworks, ensuring seamless user experiences across different devices and browsers. In addition, I design and optimize databases, utilizing SQL and NoSQL databases, and integrate them with backend systems to handle data storage and retrieval efficiently. I develop RESTful APIs and implement server-side logic using programming languages such as Python, and Node.js, to ensure robust functionality and secure data exchange. Throughout the development process, I follow best practices, such as version control and testing methodologies, to deliver high-quality code. I continuously explore emerging technologies and industry trends, incorporating them into projects to enhance performance, scalability, and maintainability. I also collaborate with stakeholders, providing technical expertise and contributing to the overall project success. As a Fullstack Web Developer, I thrive in dynamic environments, solving complex problems and delivering solutions that meet client requirements. I am passionate about creating cutting-edge web applications and staying up-to-date with the latest web development practices to provide exceptional user experiences.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Customer Service Agent Expert - <span class="place"><a href="#"> SIMPLRFLEX - Remote </a></span> <span class="year">(2021 - Present)</span></h3>
+                                <p>As a Customer Service Representative, I am responsible for verifying and obtaining required referrals and authorizations prior to services being provided. I obtain patient data to facilitate verification, handle high call volume, and instill calm in customers while managing escalations and transfers. I offer customers current product and service information, continuously improve job knowledge through training and expert use of available knowledge bases, and build rapport with customers through active listening. I document information from customers to determine product or service problems, process customer exchanges and refunds, refer unresolved customer grievances to designated departments, identify causes of product malfunctions, and follow up with customers to share findings and offer solutions.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Security Officer Assistant Supervisor - <span class="place"><a href="#"> Metro One, Pleaseant View, TN </a></span> <span class="year">(2019 - 2021)</span></h3>
+                                <p>As a Security Officer at Lowe's Direct Fulfillment Center, I ensured the safety and security of the facility and its employees by monitoring the premises, conducting searches, screening employees and trailers, responding to reports of suspicious activity, enforcing site rules, patrolling public areas, preparing incident reports, conducting site searches, and verifying identities of authorized persons. I used de-escalation and crisis management techniques as needed. These experiences have developed my attention to detail, problem-solving, and interpersonal skills.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Squad Leader, Unit Prevention Leader (UPL), Equal Opportunity Leader, Sexual Harassment/Assault Response and Prevention Leader (SHARP) Staff Sergeant E-6 - <span class="place"><a href="#"> Fort Hood, TX, US Army </a></span> <span class="year">(2016 - 2018)</span></h3>
+                                <ul>
+                                    <li>
+                                      <strong>Squad Leader:</strong> Led, mentored, and supervised a diverse squad of soldiers, fostering teamwork and maintaining high levels of morale and discipline. Oversaw training programs, conducted evaluations, and ensured the readiness of squad members for combat and other operational requirements.
+                                    </li>
+                                    <li>
+                                      <strong>Unit Prevention Leader (UPL):</strong> Assumed a vital role in promoting a drug-free environment within the unit. Conducted education and prevention programs, facilitated drug testing procedures, and implemented awareness campaigns to address substance abuse issues.
+                                    </li>
+                                    <li>
+                                      <strong>Equal Opportunity Leader:</strong> Championed diversity, equality, and fair treatment within the unit. Provided guidance and support to soldiers, ensuring compliance with equal opportunity policies and fostering an inclusive work environment.
+                                    </li>
+                                    <li>
+                                      <strong>Sexual Harassment/Assault Response and Prevention Leader (SHARP):</strong> Took an active role in preventing and addressing incidents of sexual harassment and assault. Conducted training sessions, provided support to victims, and ensured the implementation of appropriate response and prevention measures in accordance with Army regulations and guidelines.
+                                    </li>
+                                  </ul>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Squad Leader - M2A3 Subject Matter Expert Trainer and Certifier - Sergeant E-5 - <span class="place"><a href="#"> Camp Casey South Korea assigned to Fort Hood, TX, US Army </a></span> <span class="year">(2015 - 2016)</span></h3>
+                                <p>Led a squad of soldiers assigned to the operation, maintenance, and tactical deployment of M2A3 Bradley Fighting Vehicles. Provided expert training and certification to ensure the proficiency of squad members and other members of the Unit. Developed and implemented strategies for efficient vehicle utilization during missions. Conducted performance evaluations and mentored squad members to enhance their professional development and operational capabilities.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Team Leader - Sergeant E-5 - <span class="place"><a href="#">Fort Hood, TX, US Army </a></span> <span class="year">(2014 - 2015)</span></h3>
+                                <p>Served as a skilled gunner and team leader operating M2A3 Bradley Fighting Vehicles. Conducted maintenance and inspections on the vehicle's systems, ensuring optimal functionality. Led the team during combat and training exercises, maintaining constant situational awareness and executing tactical maneuvers with precision. Facilitated effective communication and coordination among team members to achieve mission success.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Senior Weapons Squad Team Leader - Specalist E-4 - <span class="place"><a href="#">Fort Hood, TX, US Army </a></span> <span class="year">(2012 - 2014)</span></h3>
+                                <p>In my role as a senior team leader within the weapons squad at Fort Hood, TX, I demonstrated strong leadership skills and exercised effective command. I directed and supervised a team of soldiers, prioritizing their readiness, training, and well-being. Regularly conducting training exercises, I focused on enhancing both individual and team skills in diverse combat scenarios. Collaboration and coordination were integral to our success, as I worked closely with other teams and units to achieve mission objectives in dynamic and demanding environments. Through proactive leadership and fostering a cohesive team environment, we consistently met and exceeded expectations.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Team Leader - Private First Class E-3 - <span class="place"><a href="#">Kunduz, Afghansistan, US Army</a></span> <span class="year">(2011 - 2012)</span></h3>
+                                <p>Led a team of soldiers during a deployment to Kunduz, Afghanistan, where I was assigned the role of a team leader. In this capacity, I provided guidance and oversight for the team's tactical operations, which encompassed conducting reconnaissance missions, security patrols, and responding to potential threats. I also served as a gunner on M2 weapons and Tactical vehicles, employing my skills to engage targets and offer essential fire support when necessary. Additionally, I had the responsibility of a radio operator for the platoon leader, ensuring the seamless flow of critical information and maintaining effective communication within the unit. As part of this role, I also played a role in plotting important information on a map to facilitate operational decision-making.</p>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title">Infantryman - Private E-2 <span class="place"><a href="#">Bauhmholder Germany, US Army</a></span> <span class="year">(2010 - 2011)</span></h3>
+                                <p>Played a critical part in supporting combat operations and maintaining our unit's readiness. This involved a wide range of responsibilities that required physical fitness, discipline, and effective teamwork. I underwent intensive training to become proficient in operating and maintaining various weapons and equipment essential to infantry operations. I conducted patrols, provided security for assigned areas, and remained vigilant in reporting any observations or incidents. Additionally, I played a key role in setting up defensive positions, ensuring the safety of our personnel and assets. Effective communication, following orders, and adhering to military standards were crucial aspects of my role. Overall, my experience as an Infantryman has shaped me into a disciplined professional with a strong work ethic and the ability to thrive in challenging environments</p>
+                            </div>
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                <section class="github section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">My GitHub</h2>
+
+                        
+                        <div id="github-graph" class="github-graph">
+
+                        </div><!--//github-graph-->
+
+        
+                    
+                        <div id="ghfeed" class="ghfeed">
+                        </div><!--//ghfeed-->
+                        
+                    </div><!--//secton-inner-->
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+                 <aside class="info aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Ewa Beach, HI</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">aaronciminelli@gmail.com</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.aaronciminelli.com</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                <aside class="skills aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <p class="intro">
+                                As a versatile developer skilled in C++, Python, Java, and Full Stack Web Development, I offer a dynamic combination of expertise to engineer powerful and scalable applications, ensuring seamless end-to-end solutions.</p>
+                            
+                            <div class="skillset">
+                               
+                                <div class="item">
+                                    <h3 class="level-title">Python, C++, Java <span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="comprehensive coding expertise across Python, C++, and Java, harnessing the power of each language to develop versatile, performant, and scalable applications."><i class="fas fa-info-circle"></i></span></h3>
+
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 90%" aria-valuenow="90"  aria-valuemin="0" aria-valuemax="100"></div>
+									</div><!--//level-bar-->                               
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">JavaScript<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="Strong proficiency in JavaScript, harnessing its power to create interactive and dynamic web applications."><i class="fas fa-info-circle"></i></span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 80%" aria-valuenow="80"  aria-valuemin="0" aria-valuemax="100"></div>
+									</div><!--//level-bar-->                                   
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Frontend Web Development, HTML, Boostrap, etc <span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" title="Learning in Progress"><i class="fas fa-info-circle"></i></span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 80%" aria-valuenow="80"  aria-valuemin="0" aria-valuemax="100"></div>
+									</div><!--//level-bar-->                                  
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Backend Web Development, Angular, React<span class="level-label" data-bs-toggle="tooltip" data-placement="left" title="Learning In Progress"><i class="fas fa-info-circle"></i></span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 75%" aria-valuenow="75"  aria-valuemin="0" aria-valuemax="100"></div>
+									</div><!--//level-bar-->                                  
+                                </div><!--//item-->
+                                
+                                <p><a class="more-link" href="https://github.com/aaronkciminelli"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> 
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+          
+        
+
+                
+                <aside class="education aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BS Computer Science</h3>
+                                <h4 class="university">Southern New Hampshire University <span class="year">(2021-2023)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Military Education</h3>
+                                <h4 class="university">United States Army Equal Opportunity Leaders Course <span class="year">(2016)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Military Education</h3>
+                                <h4 class="university">United States Army SHARP Leader Course <span class="year">(2016)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Military Education</h3>
+                                <h4 class="university">United States Army Substance Abuse and Prevention (UPL) Course <span class="year">(2015)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Military Education</h3>
+                                <h4 class="university">United States Army Advanced Leaders Course <span class="year">(2015)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Military Education</h3>
+                                <h4 class="university">United States Army Chemical Biological Radiological Nuclear (CBRN) Leaders Course <span class="year">(2015)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Military Education</h3>
+                                <h4 class="university">United States Army Basic Leaders Course <span class="year">(2013)</span></h4>
+                            </div><!--//item-->
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                            
+                <aside class="languages aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>American Sign Language:</strong></span>
+                                    <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
+                                </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="blog aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Blog Posts Coming Soon</h2>
+                        <!-- <p>You can use Sascha Depold's <a href="#" target="_blank">Vanilla RSS plugin</a> to pull in your blog post feeds.</p> -->
+                        <div id="rss-feeds" class="content">
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="list music aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Favourite coding music</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-headphones"></i> <a href="https://www.youtube.com/watch?v=_ITiwPMUzho">LOFI HIP Hop Mix</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://ko-fi.com/s/eeab5d42b0">Lofi House Mix</a></li>
+                                <!-- <li><i class="fas fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="#">Duis et felis bibendum</a></li> -->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <!-- <aside class="list conferences aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Conferences</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="far fa-calendar-alt"></i> <a href="#" target="_blank">WWDC 2030</a> (San Francisco)</li>
+                                <li><i class="far fa-calendar-alt"></i> <a href="#">Hive</a> (Seattle)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside> -->
+                
+                <aside class="credits aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Credits</h2>
+                        <div class="content">
+                            <ul class="list-unstyled pb-2">
+                                <li><a href="https://getbootstrap.com/" target="_blank"><i class="fas fa-external-link-alt"></i>Bootstrap</a></li>
+                                <li><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fas fa-external-link-alt"></i>FontAwesome</a></li>
+                                <li><a href="https://github.com/IonicaBizau/github-calendar" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Calendar Plugin</a></li>
+                                
+                                <li><a href="https://caseyscarborough.com/projects/github-activity/" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Activity Stream</a></li>
+                                
+                                <li><a href="https://github.com/sdepold/vanilla-rss" target="_blank"><i class="fas fa-external-link-alt"></i>Vanilla RSS</a></li>
+                                <li><a href="https://github.com/coliff/dark-mode-switch"><i class="fas fa-external-link-alt"></i>Dark Mode Switch</a></li>
+                                
+                                
+                            </ul>
+                            
+                            <hr/>
+                            <h2 class="heading">Attribution</h2>
+                        <div class="content">
+                            <ul class="list-unstyled pb-2">
+                                <small class="copyright">Shout Out to <span class="sr-only">love</span><i class="fas fa-heart"></i>  <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for creating this website template</small>
+                                
+                                
+                            </ul>
+                            
+                            <hr/>
+                            
+                             <!-- <p class="pt-2">This Boootstrap portfolio template is handcrafted by UX designer <a href="https://twitter.com/3rdwave_themes" target="_blank">Xiaoying Riley</a> at <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a> for developers and is <strong>FREE</strong> as long as you keep the footer attribution link.</p>
+                             <p>If you’d like to <strong>use this template without the attribution link</strong>, you can <a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-portfolio-theme-for-web-developers/" target="_blank">buy the commercial license</a>.</p>
+                             
+                             <a class="btn btn-cta-primary btn-download" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/" target="_blank"><i class="fas fa-download"></i> I want to download</a>
+                            <hr/>
+                            <h5 class="subheading pt-3">Want more free Bootstrap themes and templates?</h5>
+                            <p>Check out our <a href="https://themes.3rdwavemedia.com/bootstrap-templates/free/">collection of free themes and templates.</a></p>
+                            <p>Follow <a href="https://twitter.com/3rdwave_themes" target="_blank">Xiaoying</a> on twitter so you don't miss any future freebies!</p> 
+                            
+                            <a class="btn btn-cta-secondary btn-follow" href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fab fa-twitter"></i> Follow on twitter</a> -->
+                            
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+              
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <p>&copy; 2023 aaronciminelli.com All rights reserved.</p>
+                <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
+</body>
+</html> 
 
