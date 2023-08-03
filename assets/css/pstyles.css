@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#template-display {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#input-area {
+    margin-top: 20px;
+}
+#generate-template {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* No border */
+    color: white; /* White text color */
+    padding: 15px 32px; /* Padding around the text */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* No underline */
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; /* Change mouse cursor when over the button */
+    border-radius: 4px; /* Rounded corners */
+    transition-duration: 0.4s; /* Transition effect duration */
+}
+
+#generate-template:hover {
+    background-color: #45a049; /* Change background color when hovered */
+}
+.myButton {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* No border */
+    color: white; /* White text color */
+    padding: 15px 32px; /* Padding around the text */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* No underline */
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; /* Change mouse cursor when over the button */
+    border-radius: 4px; /* Rounded corners */
+    transition-duration: 0.4s; /* Transition effect duration */
+}
+
+.myButton:hover {
+    background-color: #45a049; /* Change background color when hovered */
+}
+
