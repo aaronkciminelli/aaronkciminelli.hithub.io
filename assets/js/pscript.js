@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set up the Submit button
     submitButton.textContent = 'Submit';
     submitButton.className = 'btn btn-success'; // Added class
-    submitButton.disabled = true;
+    submitButton.disabled = false;
     inputArea.appendChild(submitButton);
 
     var templates = window.myApp.templates;
