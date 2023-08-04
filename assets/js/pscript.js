@@ -20,9 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
         var template = templates[Math.floor(Math.random() * templates.length)];
         templateDisplay.textContent = template;
 
-        // Hide or show the template based on the checkbox status
-        templateDisplay.style.display = hideTemplateCheckbox.checked ? 'none' : 'block';
-
         // Extract the blanks from the template
         var blanks = template.match(/\[.*?\]/g).map(function(blank) {
             return blank.slice(1, -1);
@@ -62,6 +59,9 @@ document.addEventListener('DOMContentLoaded', function() {
             definition.className = 'mt-2'; // Added class
             inputArea.appendChild(definition);
         });
+
+        // Adjust the visibility of the template based on the checkbox status
+        templateDisplay.style.display = hideTemplateCheckbox.checked ? 'none' : 'block';
     });
 
     submitButton.addEventListener('click', function() {
@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return placeholders[p1].shift().value;
         });
 
+        // Adjust the visibility of the template based on the checkbox status
         templateDisplay.style.display = hideTemplateCheckbox.checked ? 'none' : 'block';
 
         // Clear input area and display the generate template button
