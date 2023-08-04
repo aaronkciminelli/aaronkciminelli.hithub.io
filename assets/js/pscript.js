@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Get the required DOM elements
     var generateTemplateButton = document.getElementById('generate-template');
     var templateDisplay = document.getElementById('template-display');
+    templateDisplay.style.display = 'block';
     var inputArea = document.getElementById('input-area');
     var hideTemplateCheckbox = document.getElementById('hide-template-checkbox');
     var submitButton = document.createElement('button');
