@@ -3,13 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
     var generateTemplateButton = document.getElementById('generate-template');
     var templateDisplay = document.getElementById('template-display');
     var inputArea = document.getElementById('input-area');
+    var hideTemplateCheckbox = document.getElementById('hide-template-checkbox');
     var submitButton = document.createElement('button');
-    var templateHidden = true; // Flag to track if the template is hidden
 
     // Set up the Submit button
     submitButton.textContent = 'Submit';
     submitButton.className = 'btn btn-success'; // Added class
-    submitButton.disabled = false;
     inputArea.appendChild(submitButton);
 
     var templates = window.myApp.templates;
@@ -20,8 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Generate a random template
         var template = templates[Math.floor(Math.random() * templates.length)];
         templateDisplay.textContent = template;
-        templateDisplay.style.display = 'none'; // Hide the template initially
-        templateHidden = true; // Set the template flag to hidden
+
+        // Hide or show the template based on the checkbox status
+        templateDisplay.style.display = hideTemplateCheckbox.checked ? 'none' : 'block';
 
         // Extract the blanks from the template
         var blanks = template.match(/\[.*?\]/g).map(function(blank) {
@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
             // Generate button click event
             generateButton.addEventListener('click', function() {
                 inputField.value = definitions[blank][Math.floor(Math.random() * definitions[blank].length)];
-                checkIfAllFieldsAreFilled();
             });
 
             // Append input field and generate button to input area
@@ -63,8 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
             definition.className = 'mt-2'; // Added class
             inputArea.appendChild(definition);
         });
-
-        templateHidden = true; // Set the template flag to hidden
     });
 
     submitButton.addEventListener('click', function() {
@@ -79,23 +76,15 @@ document.addEventListener('DOMContentLoaded', function() {
             return placeholders[p1].shift().value;
         });
 
-        if (templateHidden) {
-            templateDisplay.style.display = 'block'; // Show the template if hidden
-            templateHidden = false; // Set the template flag to not hidden
-        }
+        templateDisplay.style.display = hideTemplateCheckbox.checked ? 'none' : 'block';
 
         // Clear input area and display the generate template button
         inputArea.innerHTML = '';
         inputArea.appendChild(generateTemplateButton);
     });
 
-    function checkIfAllFieldsAreFilled() {
-        // Check if all input fields are filled
-        var allFieldsAreFilled = Array.from(inputArea.querySelectorAll('input')).every(function(input) {
-            return input.value !== '';
-        });
-
-        // Enable or disable the submit button based on input field values
-        submitButton.disabled = !allFieldsAreFilled;
-    }
+    // Event listener for the hide template checkbox
+    hideTemplateCheckbox.addEventListener('change', function() {
+        templateDisplay.style.display = this.checked ? 'none' : 'block';
+    });
 });
