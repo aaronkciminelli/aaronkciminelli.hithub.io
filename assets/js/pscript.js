@@ -6,10 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var inputArea = document.getElementById('input-area');
     var hideTemplateCheckbox = document.getElementById('hide-template-checkbox');
     var submitButton = document.createElement('button');
+    var categorySelect = document.getElementById('category-select');
 
     // Set up the Submit button
     submitButton.textContent = 'Submit';
-    submitButton.className = 'btn btn-success'; // Added class
+    submitButton.className = 'btn btn-success';
     inputArea.appendChild(submitButton);
 
     var templates = window.myApp.templates;
@@ -17,8 +18,13 @@ document.addEventListener('DOMContentLoaded', function() {
     var examples = window.myApp.examples;
 
     generateTemplateButton.addEventListener('click', function() {
-        // Generate a random template
-        var template = templates[Math.floor(Math.random() * templates.length)];
+        // Get the selected category
+        var selectedCategory = categorySelect.value;
+
+        // Generate a random template from the selected category
+        var categoryTemplates = templates[selectedCategory];
+        var template = categoryTemplates[Math.floor(Math.random() * categoryTemplates.length)];
+
         templateDisplay.textContent = template;
 
         // Extract the blanks from the template
@@ -32,13 +38,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // Generate input fields and buttons for each blank
         blanks.forEach(function(blank) {
             var inputField = document.createElement('input');
-            inputField.className = 'form-control mt-2'; // Added class
+            inputField.className = 'form-control mt-2';
             inputField.setAttribute('placeholder', blank);
             inputArea.appendChild(inputField);
 
             var generateButton = document.createElement('button');
             generateButton.textContent = 'Generate ' + blank;
-            generateButton.className = 'btn btn-primary mt-2'; // Added class
+            generateButton.className = 'btn btn-primary mt-2';
 
             // Generate button click event
             generateButton.addEventListener('click', function() {
@@ -57,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         blanks.forEach(function(blank) {
             var definition = document.createElement('p');
             definition.textContent = examples[blank];
-            definition.className = 'mt-2'; // Added class
+            definition.className = 'mt-2';
             inputArea.appendChild(definition);
         });
 
@@ -73,12 +79,16 @@ document.addEventListener('DOMContentLoaded', function() {
             placeholders[input.placeholder].push(input);
         });
 
-        templateDisplay.textContent = templateDisplay.textContent.replace(/\[(.*?)\]/g, function(_, p1) {
+        var finalTemplate = templateDisplay.textContent.replace(/\[(.*?)\]/g, function(_, p1) {
             return placeholders[p1].shift().value;
         });
 
-        // Adjust the visibility of the template based on the checkbox status
-        templateDisplay.style.display = hideTemplateCheckbox.checked ? 'none' : 'block';
+        // Create a new h3 element, set its innerHTML to the final template, and append it to the document body
+        var finalTemplateElement = document.createElement('h3');
+        finalTemplateElement.style.fontWeight = 'bold';
+        finalTemplateElement.style.textAlign = 'center';
+        finalTemplateElement.innerHTML = finalTemplate;
+        document.body.appendChild(finalTemplateElement);
 
         // Clear input area and display the generate template button
         inputArea.innerHTML = '';
