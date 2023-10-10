@@ -137,6 +137,33 @@ h6 {
   padding-right: 30px;
 }
 
+.custom-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position above the icon */
+  left: 50%;
+  margin-left: -60px; /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0s;
+}
+
+.custom-tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
 @media (max-width: 1199px) {
   #header {
     left: -300px;
@@ -156,6 +183,38 @@ h6 {
 span[data-purecounter-end="100"]::after {
   content: '%';
 }
+
+.black-button {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  border: none; /* Remove any borders */
+}
+
+.black-button:hover {
+  background-color: #333; /* Slightly lighter black for hover effect */
+  color: #fff; /* Keep the text white on hover */
+}
+.black-button i {
+  color: #fff !important;
+}
+
+#footer .black-button {
+  background-color: #000; /* Black background */
+  color: #fff;  /* White text */
+  border: 2px solid #fff; /* Explicit white border */
+}
+
+#footer .black-button:hover {
+  background-color: #333; /* Slightly lighter black for hover effect */
+  color: #fff;  /* Keep the text white on hover */
+  border-color: #fff; /* Keep the border white on hover */
+}
+
+#footer .black-button i {
+  color: #fff; /* White icon */
+}
+
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
