@@ -693,6 +693,28 @@ section {
   bottom: 0;
 }
 
+
+#portfolio-blog-filter {
+  list-style-type: none; /* Removes bullet points */
+  padding-left: 0; /* Removes the default padding from the list */
+}
+
+#portfolio-blog-filter li {
+  display: inline-block; /* Display list items in a line */
+  margin-right: 10px; /* Add some space between items */
+}
+
+#portfolio-blog-filter .filter-label {
+  cursor: pointer;
+  padding: 5px;
+}
+
+#portfolio-blog-filter input[type="radio"]:checked + .filter-label {
+  text-decoration: underline;
+}
+
+
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -1088,6 +1110,10 @@ section {
     transform: rotate(360deg);
   }
 }
+
+
+
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
