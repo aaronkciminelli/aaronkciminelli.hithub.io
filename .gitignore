@@ -6,5 +6,7 @@ CNAME
 LICENSE
 Readme.text
 config.js
+.env
+
 
 
