@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aaron Ciminelli's personal portfolio showcasing key projects and creative work.">
+    <meta name="author" content="Aaron Ciminelli">
+    <title>Aaron Ciminelli - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="https://placehold.co/32x32/333/FFF?text=AC" type="image/x-icon">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body class="antialiased">
+    <header class="header w-full py-6 mb-8 shadow-xl border-b relative">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center px-4 sm:px-6 lg:px-8">
+            <div class="text-center sm:text-left mb-4 sm:mb-0">
+                <h1 class="text-4xl font-extrabold mb-2">My Personal Portfolio</h1>
+                <p class="text-lg">Showcasing my projects and creative solutions.</p>
+            </div>
+
+            <nav class="flex flex-wrap justify-center sm:justify-end space-x-4 sm:space-x-6">
+                <a href="index.html" class="nav-link font-semibold transition duration-300">Home</a>
+                <a href="resume.html" class="nav-link font-semibold transition duration-300">Resume</a>
+            </nav>
+
+            <button id="theme-toggle" title="Toggle light/dark theme" class="theme-toggle-button absolute top-4 right-4 p-2 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition duration-300">
+                <i id="theme-icon" class="fas fa-sun text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="portfolio-container">
+        <section id="projects" class="mb-12">
+            <h2 class="text-3xl font-bold section-title">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <img src="https://placehold.co/400x200/555/FFF?text=Project+1" alt="Project 1 Thumbnail">
+                    <div class="project-card-content">
+                        <h3 class="text-xl font-semibold project-title mb-2">E-commerce Platform Redesign</h3>
+                        <p class="text-sm project-description mb-3">
+                            A complete overhaul of an existing e-commerce site, focusing on user experience, performance optimization, and modern design principles.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <a href="https://github.com/aaronkciminelli/" target="_blank" rel="noopener noreferrer" class="project-link font-medium flex items-center space-x-2">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>View Project</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://placehold.co/400x200/555/FFF?text=Project+2" alt="Project 2 Thumbnail">
+                    <div class="project-card-content">
+                        <h3 class="text-xl font-semibold project-title mb-2">AI-Powered Chatbot Integration</h3>
+                        <p class="text-sm project-description mb-3">
+                            Developed and integrated a custom chatbot into a customer service portal, significantly reducing response times using natural language processing.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">TensorFlow</span>
+                            <span class="project-tag">Flask</span>
+                        </div>
+                        <a href="https://github.com/aaronkciminelli/" target="_blank" rel="noopener noreferrer" class="project-link font-medium flex items-center space-x-2">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>View Project</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://placehold.co/400x200/555/FFF?text=Project+3" alt="Project 3 Thumbnail">
+                    <div class="project-card-content">
+                        <h3 class="text-xl font-semibold project-title mb-2">Mobile App for Fitness Tracking</h3>
+                        <p class="text-sm project-description mb-3">
+                            Designed and built a cross-platform mobile application for tracking fitness activities and progress, with data visualization features.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="project-tag">React Native</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Swift</span>
+                        </div>
+                        <a href="https://github.com/aaronkciminelli/" target="_blank" rel="noopener noreferrer" class="project-link font-medium flex items-center space-x-2">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>View Project</span>
+                        </a>
+                    </div>
+                </div>
+
+                </div>
+        </section>
+
+        <section id="about" class="mb-12">
+            <h2 class="text-3xl font-bold section-title">About Me & My Approach</h2>
+            <div class="space-y-4">
+                <p class="text-lg leading-relaxed">
+                    I am a passionate software engineer with a knack for building robust, scalable, and user-centric applications. My journey in tech has been driven by a relentless curiosity and a desire to solve complex problems with elegant code. I thrive in environments that encourage innovation and continuous learning.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    My approach to development is centered on a few core principles: understanding the user's needs, writing clean and maintainable code, and fostering collaborative team dynamics. I believe that the best solutions emerge from a blend of technical expertise and empathetic design.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Beyond coding, I enjoy staying updated with the latest industry trends, contributing to open-source projects, and exploring new technologies.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-8">
+            <h2 class="text-3xl font-bold section-title">Get In Touch</h2>
+            <div class="flex flex-wrap justify-center sm:justify-start gap-x-6 gap-y-4 text-lg">
+                <a href="mailto:contact@aaronciminelli.com" class="hover:underline flex items-center space-x-2">
+                    <i class="fas fa-envelope"></i>
+                    <span>contact@aaronciminelli.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/aaronciminelli/" target="_blank" rel="noopener noreferrer" class="hover:underline flex items-center space-x-2">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn Profile</span>
+                </a>
+                <a href="https://github.com/aaronkciminelli" target="_blank" rel="noopener noreferrer" class="hover:underline flex items-center space-x-2">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub Profile</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div class="text-center mt-8 text-sm footer-text">
+        <p>&copy; 2025 Aaron Ciminelli. All rights reserved.</p>
+    </div>
+</body>
+</html>

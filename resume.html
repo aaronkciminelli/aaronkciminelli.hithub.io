@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Aaron Ciminelli's professional resume detailing experience, education, skills, and projects.">
+    <meta name="author" content="Aaron Ciminelli">
+    <title>Aaron Ciminelli - Resume</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for a clean, modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://placehold.co/32x32/333/FFF?text=AC" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="scripts/config.js"></script>
+ 
+    <script src="scripts/resume.js"></script>
+</head>
+
+<body class="antialiased">
+    <header class="header w-full py-6 mb-8 shadow-xl border-b relative">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center px-4 sm:px-6 lg:px-8">
+            <div class="text-center sm:text-left mb-4 sm:mb-0">
+                <h1 class="text-4xl font-extrabold mb-2">Aaron Ciminelli's Resume</h1>
+                <p class="text-lg">Detailed professional experience and skills.</p>
+            </div>
+
+            <nav class="flex flex-wrap justify-center sm:justify-end space-x-4 sm:space-x-6">
+                <a href="index.html" class="nav-link font-semibold transition duration-300">Home</a>
+                <a href="portfolio.html" class="nav-link font-semibold transition duration-300">Portfolio</a>
+            </nav>
+
+            <button id="theme-toggle" title="Toggle light/dark theme"
+                class="theme-toggle-button absolute top-4 right-4 p-2 rounded-full hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition duration-300">
+                <i id="theme-icon" class="fas fa-sun text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="resume-container">
+        <section class="mb-8 pb-4 border-b border-gray-700">
+            <h2 class="text-3xl font-bold resume-section-title mb-4 border-none pb-0">Aaron Ciminelli</h2>
+            <p class="text-lg resume-item-subtitle mb-2">Operations Analyst | Computer Scientist | Automation Expert |
+                Military Veteran</p>
+            <div class="flex flex-wrap justify-center sm:justify-start gap-x-4 gap-y-2 text-sm resume-item-subtitle">
+                <span class="flex items-center">
+                    <i class="fas fa-envelope mr-2"></i>
+                    <span id="email-text">contact@aaronciminelli.com</span>
+                </span>
+                <span><i class="fas fa-map-marker-alt mr-2"></i>Lorton, VA</span>
+                <a href="https://www.linkedin.com/in/aaronciminelli/" target="_blank" rel="noopener noreferrer"
+                    class="hover:underline"><i class="fab fa-linkedin mr-2"></i>LinkedIn</a>
+                <a href="https://github.com/aaronkciminelli" target="_blank" rel="noopener noreferrer"
+                    class="hover:underline"><i class="fab fa-github mr-2"></i>GitHub</a>
+            </div>
+            <p id="resume-summary" class="text-base mt-4 resume-item-description">
+                Dedicated professional with over 10 years of experience as a service member, civilian, and contractor
+                with experience in optimizing operational efficiency and contributing to mission success through
+                strategic planning, analytical problem-solving, and cost-effective resource management. Proficient in
+                leveraging data analysis, reporting and visualization tools to communicate superior reports,
+                presentations, and operational documentation with precision and clarity.
+            </p>
+        </section>
+
+        <section id="experience" class="mb-8">
+            <h3 class="text-2xl font-bold resume-section-title">Experience</h3>
+            <div class="space-y-6">
+
+                <!-- MES -->
+                <div>
+                    <h4 class="text-xl font-semibold resume-item-title">US Army Education Center, Computer Lab
+                        Coordinator</h4>
+                    <p class="resume-item-subtitle">M.E.S, Inc | Schofield Barracks, Hi</p>
+                    <p class="resume-item-date text-sm mb-2">Jan 2024 - Present</p>
+                    <ul class="list-disc list-inside space-y-1 resume-item-description">
+                        <li>Provided individual and group education counseling sessions ensuring compliance with Army
+                            policies and procedures</li>
+                        <li>Accurately documented client interactions and outcomes in education records, maintaining
+                            100% compliance with AR 621-5 directives.</li>
+                        <li>Delivered briefings and workshops on ACES programs to groups of up to 30, enhancing
+                            awareness and participation by 82%</li>
+                        <li>Coordinated, prepared and scheduled special events, including college fairs and graduations,
+                            contributing to a 90% increase in participant satisfaction</li>
+                    </ul>
+                </div>
+
+                <!-- Freelance -->
+                <div>
+                    <h4 class="text-xl font-semibold resume-item-title">Freelance Consultant</h4>
+                    <p class="resume-item-subtitle">Remote</p>
+                    <p class="resume-item-date text-sm mb-2">Jan 2021 - Present</p>
+                    <ul class="list-disc list-inside space-y-1 resume-item-description">
+                        <li>Designed, developed and supplied innovative web applications using modern frontend
+                            frameworks, including JavaScript, Angular, React, and Vue, ensuring optimal performance and
+                            scalability</li>
+                        <li>Led projects to advance interdepartmental business goals and streamline processes</li>
+                        <li>Enhanced customer success initiatives by leveraging in-depth product knowledge to identify
+                            client needs, recommend tailored solutions, and optimize onboarding processes</li>
+                        <li>Applied innovative problem-solving techniques to de-escalate high-pressure situations and
+                            preserve harmonious client relationships, consistently earning recognition for
+                            professionalism and technical expertise</li>
+                    </ul>
+                </div>
+
+                <!-- Army -->
+                <div>
+                    <h4 class="text-xl font-semibold resume-item-title">Staff Sergeant, Project Manager</h4>
+                    <p class="resume-item-subtitle">U.S. Army | Various Locations</p>
+                    <p class="resume-item-date text-sm mb-2">March 2010 - May 2018</p>
+                    <ul class="list-disc list-inside space-y-1 resume-item-description">
+                        <li>Excelled in collaborating with high-performing cross-functional teams, managing training
+                            programs, and optimizing equipment utilization during operations</li>
+                        <li>Led, mentored, and supervised a diverse team of soldiers, fostering a sense of teamwork
+                            while maintaining high levels of morale and discipline</li>
+                        <li>Led a squad of soldiers who were tasked with operating, maintaining, and deploying M2A3
+                            Bradley Fighting Vehicles</li>
+                        <li>Provided expert training and certification to ensure that all squad members and other
+                            members of the Unit were proficient in their duties</li>
+                        <li>Conducted performance evaluations and mentored squad members to enhance their professional
+                            development and operational capabilities</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <section id="skills" class="mb-8">
+            <h3 class="text-2xl font-bold resume-section-title">Skills</h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">tailwindcss</span>
+                <span class="skill-tag">Express.js</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Agile Methodologies</span>
+                <span class="skill-tag">Data Analytics</span>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h3 class="text-2xl font-bold resume-section-title">Education</h3>
+            <div class="space-y-4">
+                <div>
+                    <h4 class="text-xl font-semibold resume-item-title">Bachelor of Science in Computer Science</h4>
+                    <p class="resume-item-subtitle">Southern New Hampshire University</p>
+                    <p class="resume-item-description">Cum Laude</p>
+                </div>
+            </div>
+        </section>
+                <section id="skills" class="mb-8">
+            <h3 class="text-2xl font-bold resume-section-title">Certifications</h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="skill-tag">Google Project Management Professional (PMP)</span>
+                <span class="skill-tag">Certified Complete Web Developer</span>
+                <span class="skill-tag">Certified Scrum Master (CSM)</span>
+                <span class="skill-tag">Google Cybersecurity</span>
+                <span class="skill-tag">ISC2 Cybersecurity</span>
+                <span class="skill-tag">Google IT Support</span>
+                <span class="skill-tag">Google Business Intelligence</span>
+                <span class="skill-tag">Goodwill® Career Coach and Navigator</span>
+            </div>
+        </section>
+
+
+
+        <div class="utility-buttons-container flex flex-col sm:flex-row justify-end items-center gap-4 mt-8 mr-4">
+            <button id="open-summarizer-btn"
+                class="link-button px-4 py-2 text-sm rounded-lg flex items-center justify-center space-x-2">
+                <i class="fas fa-compress-alt"></i>
+                <span>Summarize Resume</span>
+            </button>
+            <button id="print-resume-btn"
+                class="link-button print-button px-4 py-2 text-sm rounded-lg flex items-center justify-center space-x-2">
+                <i class="fas fa-print"></i>
+                <span>Print/Download PDF</span>
+            </button>
+        </div>
+    </main>
+
+    <div class="text-center mt-8 p-2 text-sm footer-text">
+        <p>&copy; 2025 Aaron. All rights reserved.</p>
+    </div>
+
+    <div id="summarizer-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3 class="text-2xl font-bold mb-4 text-center">Aaron's Ai Resume Summarizer</h3>
+            <p class="mb-4 text-center text-sm">Here's a concise summary of my resume, tailored for recruiters. You
+                can also ask follow-up questions.</p>
+
+            <div id="chat-history"
+                class="chat-history p-4 border rounded-lg border-gray-600 bg-gray-700 text-white flex-grow mb-4 overflow-y-auto">
+            </div>
+
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" class="chat-input" placeholder="Ask a question about the resume...">
+                <button id="send-chat-btn" class="link-button px-4 py-2 flex items-center justify-center space-x-2">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Send</span>
+                    <span id="chat-loading-spinner" class="loading-spinner hidden"></span>
+                </button>
+            </div>
+
+            <div class="flex justify-end space-x-4 mt-4">
+                <button id="generate-summary-btn" class="link-button px-4 py-2 flex items-center space-x-2">
+                    <span>Generate New Summary</span>
+                </button>
+                <button id="close-summarizer-modal-btn"
+                    class="bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
+                    Close
+                </button>
+            </div>
+
+            <div id="summarizer-error-message" class="text-red-500 mt-4 hidden"></div>
+        </div>
+    </div>
+</body>
+
+</html>

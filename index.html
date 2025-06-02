@@ -1,48 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="30s"/>
-    <link rel="icon" href="assets/icon.png" type="image/x-icon" />
-    <meta name="description" content="Aaron Ciminelli's personal website" />
-    <meta http-equiv=" X-UA-Compatible" content="ie=edge" />
-    <meta name="author" content="Aaron Ciminelli" />
-    <meta name="keywords" content="Aaron Ciminelli, personal website, links" />
-    <title>Aaron's Links</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aaron Ciminelli's professional links: Resume, LinkedIn, Portfolios, and Contact Information.">
+    <meta name="author" content="Aaron Ciminelli">
+    <title>Aaron Ciminelli - Professional Links</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="icon" href="https://placehold.co/32x32/333/FFF?text=AC" type="image/x-icon">
 
-    <script type="module" defer src="scripts/main.js">
-    </script>
-
-    <link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="styles/style.css">
+	<script src="scripts/script.js" defer></script>
 </head>
-
-<body>
-    <main>
-        <div class="logoContainer">
-            <img class="logo" src="assets/picture.jpg" alt="click here" />
-        </div>
-
-        <div class="greetings">
-            <div class="gradient-text">Aaron Ciminelli</div>
-        </div>
-
-        <div class="about">
-            <div>
-                Welcome to my personal website! Please feel free to explore my links below.
+<body class="antialiased">
+    <header class="header w-full py-6 mb-8 shadow-xl border-b relative">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center px-4 sm:px-6 lg:px-8">
+            <div class="text-center sm:text-left mb-4 sm:mb-0">
+                <h1 class="text-4xl font-extrabold mb-2">Aaron Ciminelli's Professional Hub</h1>
+                <p class="text-lg">Connecting you to my Resume, Portfolios, and more.</p>
             </div>
+
+            <nav class="flex flex-wrap justify-center sm:justify-end space-x-4 sm:space-x-6">
+                <a href="resume.html" class="nav-link font-semibold transition duration-300">Resume</a>
+                <a href="portfolio.html" class="nav-link font-semibold transition duration-300">Portfolio</a>
+                <!-- <a href="#contact" class="nav-link font-semibold transition duration-300">Contact</a> -->
+            </nav>
+
+            <button id="theme-toggle" title="Toggle light/dark mode" class="absolute top-4 right-4 p-2 rounded-full bg-gray-700 text-white hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition duration-300">
+                <i id="theme-icon" class="fas fa-sun text-xl"></i> </button>
+        </div>
+    </header>
+
+    <div class="main-content-card container mx-auto max-w-md p-8 rounded-xl shadow-2xl border mb-8">
+        <div class="text-center mb-8">
+            <img src="https://placehold.co/120x120/333/FFF?font=roboto&text=AC" alt="Aaron Ciminelli"
+                 class="profile-image w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 shadow-lg">
+            <h2 class="text-4xl font-bold mb-2">Aaron Ciminelli</h2>
+            <p class="text-lg">
+                <span class="font-semibold">Operations Analyst | Computer Scientist | Automation Expert | Military Veteran</span>
+            </p>
         </div>
 
-        <div class="links" id="links"> </div>
+        <div class="space-y-1">
+            <a href="resume.html" target="_blank" rel="noopener noreferrer"
+               class="link-button block w-full font-semibold py-2 px-2 rounded-lg transition duration-100 ease-in-out transform hover:scale-105 flex items-center justify-center space-x-3">
+                <i class="fas fa-file-alt text-xl"></i> <span>View My Resume</span>
+            </a>
+			
 
-        <div class="about">
-            <div>
-                More links will be coming soon! So please check back later.
-            </div>
+            <a href="https://www.linkedin.com/in/aaronciminelli/" target="_blank" rel="noopener noreferrer"
+               class="link-button block w-full font-semibold py-2 px-2 rounded-lg transition duration-100 ease-in-out transform hover:scale-105 flex items-center justify-center space-x-3">
+                <i class="fab fa-linkedin text-xl"></i> <span>Connect on LinkedIn</span>
+            </a>
+
+            <a href="https://github.com/aaronkciminelli" target="_blank" rel="noopener noreferrer"
+               class="link-button block w-full font-semibold py-2 px-2 rounded-lg transition duration-100 ease-in-out transform hover:scale-105 flex items-center justify-center space-x-3">
+                <i class="fab fa-github text-xl"></i> <span>GitHub Portfolio</span>
+            </a>
+
+            <a href="portfolio.html" target="_blank" rel="noopener noreferrer"
+               class="link-button block w-full font-semibold py-2 px-2 rounded-lg transition duration-100 ease-in-out transform hover:scale-105 flex items-center justify-center space-x-3">
+                <i class="fas fa-globe text-xl"></i> <span>Portfolio</span>
+            </a>
+
+            <a href="mailto:contact@aaronciminelli.com"
+               class="link-button block w-full font-semibold py-2 px-2 rounded-lg transition duration-100 ease-in-out transform hover:scale-105 flex items-center justify-center space-x-3">
+                <i class="fas fa-envelope text-xl"></i> <span>Email Me</span>
+            </a>
         </div>
-        
-    </main>
+
+        <div class="text-center mt-8 text-sm footer-text">
+            <p>&copy; 2025 Aaron Ciminelli. All rights reserved.</p>
+        </div>
+    </div>
 </body>
-
 </html>

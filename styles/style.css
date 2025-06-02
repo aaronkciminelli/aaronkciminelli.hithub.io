@@ -1,0 +1,487 @@
+/* CSS Custom Properties (Variables) - Consistent with other pages */
+:root {
+    /* Dark Mode Defaults */
+    --body-bg: #1a202c;
+    --body-text-color: #e2e8f0;
+
+    --card-bg: #2d3748;
+    --card-border-color: #4a5568;
+    --card-shadow-dark: rgba(0, 0, 0, 0.3);
+    --card-shadow-light: rgba(0, 0, 0, 0.2);
+    --card-heading-color: #ffffff;
+    --card-paragraph-color: #a0aec0;
+    --card-tagline-color: #cbd5e0;
+
+    --button-bg: #4299e1;
+    --button-hover-bg: #3182ce;
+    --button-text-color: #ffffff;
+    --button-shadow-dark: rgba(0, 0, 0, 0.1);
+    --button-shadow-light: rgba(0, 0, 0, 0.06);
+
+    --header-bg: #1a202c;
+    --header-border-color: #2d3748;
+    --header-shadow-dark: rgba(0, 0, 0, 0.2);
+    --header-shadow-light: rgba(0, 0, 0, 0.1);
+    --header-text-color: #ffffff;
+    --header-paragraph-color: #a0aec0;
+    --nav-link-color: #ffffff;
+
+    --footer-text-color: #718096;
+
+    --scrollbar-track-bg: #2d3748;
+    --scrollbar-thumb-bg: #4a5568;
+    --scrollbar-thumb-hover-bg: #6a768c;
+
+    --profile-image-border: #4a5568; /* Reused for general borders on sections */
+
+    /* New: Project card specific colors (for portfolio.html) */
+    --project-card-bg: var(--card-bg);
+    --project-card-border: var(--card-border-color);
+    --project-card-shadow-dark: var(--card-shadow-dark);
+    --project-card-shadow-light: var(--card-shadow-light);
+    --project-title-color: var(--card-heading-color);
+    --project-description-color: var(--body-text-color);
+    --project-tag-bg: #6366f1; /* Indigo for project tags */
+    --project-tag-text: #ffffff;
+    --project-link-color: #4299e1; /* Blue for project links */
+    --project-link-hover-color: #3182ce;
+
+    /* New: Print button colors (for resume.html) */
+    --print-button-bg: #28a745; /* Green */
+    --print-button-hover-bg: #218838; /* Darker green */
+
+    /* New: Copy icon colors (for resume.html) */
+    --copy-icon-color: #a0aec0;
+    --copy-icon-hover-color: #ffffff;
+    --copy-success-color: #28a745;
+
+    /* Modal specific variables (for resume.html) */
+    --modal-bg: #1f2937; /* Darker shade for modal background */
+    --modal-border: #4b5563;
+    --modal-text: #e5e7eb;
+    --modal-input-bg: #374151;
+    --modal-input-border: #4b5563;
+    --modal-input-text: #e5e7eb;
+    --chat-bubble-user-bg: #4299e1; /* Blue for user messages */
+    --chat-bubble-ai-bg: #4a5568; /* Gray for AI messages */
+}
+
+/* Light Mode Overrides - Consistent with other pages */
+body.light-mode {
+    --body-bg: #f7fafc;
+    --body-text-color: #2d3748;
+
+    --card-bg: #ffffff;
+    --card-border-color: #e2e8f0;
+    --card-shadow-dark: rgba(0, 0, 0, 0.1);
+    --card-shadow-light: rgba(0, 0, 0, 0.05);
+    --card-heading-color: #1a202c;
+    --card-paragraph-color: #4a5568;
+    --card-tagline-color: #2d3748;
+
+    --button-bg: #4299e1;
+    --button-hover-bg: #3182ce;
+    --button-text-color: #ffffff;
+    --button-shadow-dark: rgba(0, 0, 0, 0.1);
+    --button-shadow-light: rgba(0, 0, 0, 0.06);
+
+    --header-bg: #edf2f7;
+    --header-border-color: #cbd5e0;
+    --header-shadow-dark: rgba(0, 0, 0, 0.1);
+    --header-shadow-light: rgba(0, 0, 0, 0.06);
+    --header-text-color: #1a202c;
+    --header-paragraph-color: #4a5568;
+    --nav-link-color: #1a202c;
+
+    --footer-text-color: #718096;
+
+    --scrollbar-track-bg: #e2e8f0;
+    --scrollbar-thumb-bg: #a0aec0;
+    --scrollbar-thumb-hover-bg: #718096;
+
+    --profile-image-border: #cbd5e0;
+
+    /* New: Project card specific colors for light mode */
+    --project-card-bg: var(--card-bg);
+    --project-card-border: var(--card-border-color);
+    --project-card-shadow-dark: var(--card-shadow-dark);
+    --project-card-shadow-light: var(--card-shadow-light);
+    --project-title-color: var(--card-heading-color);
+    --project-description-color: var(--body-text-color);
+    --project-tag-bg: #818cf8; /* Lighter indigo */
+    --project-tag-text: #ffffff;
+    --project-link-color: #4299e1;
+    --project-link-hover-color: #3182ce;
+
+    /* New: Print button colors for light mode */
+    --print-button-bg: #28a745;
+    --print-button-hover-bg: #218838;
+
+    /* New: Copy icon colors for light mode */
+    --copy-icon-color: #4a5568;
+    --copy-icon-hover-color: #1a202c;
+    --copy-success-color: #28a745;
+
+    /* Modal specific variables for light mode */
+    --modal-bg: #f9fafb; /* Lighter shade for modal background */
+    --modal-border: #e5e7eb;
+    --modal-text: #1f2937;
+    --modal-input-bg: #ffffff;
+    --modal-input-border: #d1d5db;
+    --modal-input-text: #1f2937;
+    --chat-bubble-user-bg: #4299e1; /* Blue for user messages */
+    --chat-bubble-ai-bg: #e2e8f0; /* Lighter gray for AI messages */
+}
+
+/* Base Body Styles (Applies to all pages) */
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    /* Apply variables */
+    background-color: var(--body-bg);
+    color: var(--body-text-color);
+}
+
+/* Global/Shared Component Styles */
+
+/* Header styles */
+.header {
+    background-color: var(--header-bg);
+    border-color: var(--header-border-color);
+    box-shadow: 0 4px 6px -1px var(--header-shadow-dark), 0 2px 4px -1px var(--header-shadow-light);
+}
+
+.header h1,
+.header .nav-link {
+    color: var(--nav-link-color);
+}
+
+.header p {
+    color: var(--header-paragraph-color);
+}
+
+/* Theme toggle button specific styles */
+.theme-toggle-button {
+    background-color: var(--card-border-color); /* Using card-border for button background */
+    color: var(--body-text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle-button:hover {
+    background-color: var(--scrollbar-thumb-hover-bg);
+}
+
+/* Main content card (used on index.html) */
+.main-content-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border-color);
+    box-shadow: 0 10px 15px -3px var(--card-shadow-dark), 0 4px 6px -2px var(--card-shadow-light);
+    padding: 2rem;
+    border-radius: 0.75rem; /* rounded-xl */
+}
+
+/* Profile image (used on index.html) */
+.profile-image {
+    border-color: var(--profile-image-border);
+}
+
+/* Generic link button style (used on index.html, resume.html, portfolio.html) */
+.link-button {
+    background-color: var(--button-bg);
+    color: var(--button-text-color);
+    box-shadow: 0 4px 6px -1px var(--button-shadow-dark), 0 2px 4px -1px var(--button-shadow-light);
+}
+
+.link-button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+/* Footer styles */
+.footer-text {
+    color: var(--footer-text-color);
+}
+
+/* Custom scrollbar for a cleaner look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-bg);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-bg);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover-bg);
+    }
+
+     /* Resume-specific styles */
+        .resume-container {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border-color);
+            box-shadow: 0 10px 15px -3px var(--card-shadow-dark), 0 4px 6px -2px var(--card-shadow-light);
+            padding: 2rem;
+            border-radius: 0.75rem; /* rounded-xl */
+            max-width: 75vw; /* Wider for resume content */
+            width: 95%; /* Responsive width */
+            margin-bottom: 2rem;
+        }
+
+        .resume-section-title {
+            color: var(--card-heading-color);
+            border-bottom: 2px solid var(--profile-image-border);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .resume-item-title {
+            color: var(--card-heading-color);
+        }
+
+        .resume-item-subtitle,
+        .resume-item-date {
+            color: var(--card-paragraph-color);
+        }
+
+        .resume-item-description {
+            color: var(--body-text-color);
+        }
+
+        .skill-tag {
+            background-color: var(--button-bg);
+            color: var(--button-text-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px; /* rounded-full */
+            font-size: 0.875rem; /* text-sm */
+        }
+
+/* Portfolio-specific Styles (moved from portfolio.html to style.css for consistency) */
+/* Main content container for portfolio */
+.portfolio-container {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border-color);
+    box-shadow: 0 10px 15px -3px var(--card-shadow-dark), 0 4px 6px -2px var(--card-shadow-light);
+    padding: 2rem;
+    border-radius: 0.75rem; /* rounded-xl */
+    max-width: 1000px; /* Wider for portfolio content */
+    width: 95%; /* Responsive width */
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    color: var(--card-heading-color);
+    border-bottom: 2px solid var(--profile-image-border);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Project Card Styles */
+.project-card {
+    background-color: var(--project-card-bg);
+    border: 1px solid var(--project-card-border);
+    box-shadow: 0 4px 6px -1px var(--project-card-shadow-dark), 0 2px 4px -1px var(--project-card-shadow-light);
+    border-radius: 0.75rem;
+    overflow: hidden; /* Ensures image corners are rounded */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px var(--project-card-shadow-dark), 0 4px 6px -2px var(--project-card-shadow-light);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures image covers area without distortion */
+    border-bottom: 1px solid var(--project-card-border);
+}
+
+.project-card-content {
+    padding: 1.5rem;
+}
+
+.project-title {
+    color: var(--project-title-color);
+}
+
+.project-description {
+    color: var(--project-description-color);
+}
+
+.project-tag {
+    background-color: var(--project-tag-bg);
+    color: var(--project-tag-text);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+.project-link {
+    color: var(--project-link-color);
+    transition: color 0.2s ease;
+}
+
+.project-link:hover {
+    color: var(--project-link-hover-color);
+}
+
+
+/* Modal specific styles (for resume.html, but global to allow other pages to use) */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: var(--modal-bg);
+    color: var(--modal-text);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--modal-border);
+    position: relative;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+    display: flex; /* Use flexbox for internal layout */
+    flex-direction: column;
+    max-height: 90vh; /* Limit modal height */
+}
+
+.modal-overlay.show .modal-content {
+    transform: translateY(0);
+}
+
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: var(--button-bg);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Chat-specific styles */
+.chat-history {
+    flex-grow: 1; /* Allow chat history to take available space */
+    overflow-y: auto; /* Enable scrolling for chat history */
+    padding-right: 0.5rem; /* Space for scrollbar */
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; /* Space between messages */
+}
+
+.chat-bubble {
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    max-width: 85%;
+    word-wrap: break-word;
+}
+
+.chat-bubble.user {
+    background-color: var(--chat-bubble-user-bg);
+    color: var(--button-text-color); /* White text on blue */
+    align-self: flex-end; /* Align user messages to the right */
+}
+
+.chat-bubble.ai {
+    background-color: var(--chat-bubble-ai-bg);
+    color: var(--modal-text); /* Modal text color */
+    align-self: flex-start; /* Align AI messages to the left */
+}
+
+.chat-input-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem; /* Space above input */
+}
+
+.chat-input {
+    flex-grow: 1;
+    background-color: var(--modal-input-bg);
+    border: 1px solid var(--modal-input-border);
+    color: var(--modal-input-text);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.chat-input:focus {
+    border-color: var(--button-bg);
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+/* Print specific styles (global rules applied via style.css) */
+@media print {
+    body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        display: block;
+        min-height: auto;
+    }
+    .header, .footer-text, .theme-toggle-button, .utility-buttons-container, .copy-icon, .copy-success-message, .modal-overlay {
+        display: none !important;
+    }
+    .resume-container, .portfolio-container, .main-content-card { /* Apply to all main content areas */
+        box-shadow: none !important;
+        border: none !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .resume-section-title, .section-title { /* Apply to all section titles */
+        border-color: #cccccc !important;
+    }
+    .resume-item-description, .resume-item-subtitle, .resume-item-date, .project-description, .project-title {
+        color: #333333 !important;
+    }
+    .skill-tag, .project-tag {
+        background-color: #e0e0e0 !important;
+        color: #333333 !important;
+    }
+    a {
+        color: #0000ee !important;
+        text-decoration: underline !important;
+    }
+}
