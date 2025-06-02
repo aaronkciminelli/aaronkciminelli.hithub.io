@@ -55,15 +55,7 @@
     --copy-icon-hover-color: #ffffff;
     --copy-success-color: #28a745;
 
-    /* Modal specific variables (for resume.html) */
-    --modal-bg: #1f2937; /* Darker shade for modal background */
-    --modal-border: #4b5563;
-    --modal-text: #e5e7eb;
-    --modal-input-bg: #374151;
-    --modal-input-border: #4b5563;
-    --modal-input-text: #e5e7eb;
-    --chat-bubble-user-bg: #4299e1; /* Blue for user messages */
-    --chat-bubble-ai-bg: #4a5568; /* Gray for AI messages */
+    /* REMOVED: Modal specific variables */
 }
 
 /* Light Mode Overrides - Consistent with other pages */
@@ -122,15 +114,7 @@ body.light-mode {
     --copy-icon-hover-color: #1a202c;
     --copy-success-color: #28a745;
 
-    /* Modal specific variables for light mode */
-    --modal-bg: #f9fafb; /* Lighter shade for modal background */
-    --modal-border: #e5e7eb;
-    --modal-text: #1f2937;
-    --modal-input-bg: #ffffff;
-    --modal-input-border: #d1d5db;
-    --modal-input-text: #1f2937;
-    --chat-bubble-user-bg: #4299e1; /* Blue for user messages */
-    --chat-bubble-ai-bg: #e2e8f0; /* Lighter gray for AI messages */
+    /* REMOVED: Modal specific variables for light mode */
 }
 
 /* Base Body Styles (Applies to all pages) */
@@ -229,45 +213,6 @@ body {
     background: var(--scrollbar-thumb-hover-bg);
     }
 
-     /* Resume-specific styles */
-        .resume-container {
-            background-color: var(--card-bg);
-            border: 1px solid var(--card-border-color);
-            box-shadow: 0 10px 15px -3px var(--card-shadow-dark), 0 4px 6px -2px var(--card-shadow-light);
-            padding: 2rem;
-            border-radius: 0.75rem; /* rounded-xl */
-            max-width: 75vw; /* Wider for resume content */
-            width: 95%; /* Responsive width */
-            margin-bottom: 2rem;
-        }
-
-        .resume-section-title {
-            color: var(--card-heading-color);
-            border-bottom: 2px solid var(--profile-image-border);
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .resume-item-title {
-            color: var(--card-heading-color);
-        }
-
-        .resume-item-subtitle,
-        .resume-item-date {
-            color: var(--card-paragraph-color);
-        }
-
-        .resume-item-description {
-            color: var(--body-text-color);
-        }
-
-        .skill-tag {
-            background-color: var(--button-bg);
-            color: var(--button-text-color);
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px; /* rounded-full */
-            font-size: 0.875rem; /* text-sm */
-        }
 
 /* Portfolio-specific Styles (moved from portfolio.html to style.css for consistency) */
 /* Main content container for portfolio */
@@ -341,116 +286,21 @@ body {
 }
 
 
-/* Modal specific styles (for resume.html, but global to allow other pages to use) */
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.modal-overlay.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal-content {
-    background-color: var(--modal-bg);
-    color: var(--modal-text);
-    padding: 2rem;
-    border-radius: 0.75rem;
-    width: 90%;
-    max-width: 600px;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
-    border: 1px solid var(--modal-border);
-    position: relative;
-    transform: translateY(-20px);
-    transition: transform 0.3s ease;
-    display: flex; /* Use flexbox for internal layout */
-    flex-direction: column;
-    max-height: 90vh; /* Limit modal height */
-}
-
-.modal-overlay.show .modal-content {
-    transform: translateY(0);
-}
-
-.loading-spinner {
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    border-left-color: var(--button-bg);
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    animation: spin 1s linear infinite;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 0.5rem;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-/* Chat-specific styles */
-.chat-history {
-    flex-grow: 1; /* Allow chat history to take available space */
-    overflow-y: auto; /* Enable scrolling for chat history */
-    padding-right: 0.5rem; /* Space for scrollbar */
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem; /* Space between messages */
-}
-
-.chat-bubble {
-    padding: 0.75rem 1rem;
-    border-radius: 0.75rem;
-    max-width: 85%;
-    word-wrap: break-word;
-}
-
-.chat-bubble.user {
-    background-color: var(--chat-bubble-user-bg);
-    color: var(--button-text-color); /* White text on blue */
-    align-self: flex-end; /* Align user messages to the right */
-}
-
-.chat-bubble.ai {
-    background-color: var(--chat-bubble-ai-bg);
-    color: var(--modal-text); /* Modal text color */
-    align-self: flex-start; /* Align AI messages to the left */
-}
-
-.chat-input-container {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 1rem; /* Space above input */
-}
-
-.chat-input {
-    flex-grow: 1;
-    background-color: var(--modal-input-bg);
-    border: 1px solid var(--modal-input-border);
-    color: var(--modal-input-text);
-    padding: 0.75rem;
-    border-radius: 0.5rem;
-    outline: none;
-}
-
-.chat-input:focus {
-    border-color: var(--button-bg);
-    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
-}
+/* REMOVED: Modal specific styles (from style.css) */
+/*
+.modal-overlay { ... }
+.modal-overlay.show { ... }
+.modal-content { ... }
+.loading-spinner { ... }
+@keyframes spin { ... }
+.chat-history { ... }
+.chat-bubble { ... }
+.chat-bubble.user { ... }
+.chat-bubble.ai { ... }
+.chat-input-container { ... }
+.chat-input { ... }
+.chat-input:focus { ... }
+*/
 
 /* Print specific styles (global rules applied via style.css) */
 @media print {

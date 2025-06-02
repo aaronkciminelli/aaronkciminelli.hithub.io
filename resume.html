@@ -19,7 +19,6 @@
     <link rel="icon" href="https://placehold.co/32x32/333/FFF?text=AC" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
 
-    <script src="scripts/config.js"></script>
  
     <script src="scripts/resume.js"></script>
 </head>
@@ -191,37 +190,7 @@
         <p>&copy; 2025 Aaron. All rights reserved.</p>
     </div>
 
-    <div id="summarizer-modal" class="modal-overlay">
-        <div class="modal-content">
-            <h3 class="text-2xl font-bold mb-4 text-center">Aaron's Ai Resume Summarizer</h3>
-            <p class="mb-4 text-center text-sm">Here's a concise summary of my resume, tailored for recruiters. You
-                can also ask follow-up questions.</p>
 
-            <div id="chat-history"
-                class="chat-history p-4 border rounded-lg border-gray-600 bg-gray-700 text-white flex-grow mb-4 overflow-y-auto">
-            </div>
-
-            <div class="chat-input-container">
-                <input type="text" id="chat-input" class="chat-input" placeholder="Ask a question about the resume...">
-                <button id="send-chat-btn" class="link-button px-4 py-2 flex items-center justify-center space-x-2">
-                    <i class="fas fa-paper-plane"></i>
-                    <span>Send</span>
-                    <span id="chat-loading-spinner" class="loading-spinner hidden"></span>
-                </button>
-            </div>
-
-            <div class="flex justify-end space-x-4 mt-4">
-                <button id="generate-summary-btn" class="link-button px-4 py-2 flex items-center space-x-2">
-                    <span>Generate New Summary</span>
-                </button>
-                <button id="close-summarizer-modal-btn"
-                    class="bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
-                    Close
-                </button>
-            </div>
-
-            <div id="summarizer-error-message" class="text-red-500 mt-4 hidden"></div>
-        </div>
     </div>
 </body>
 
